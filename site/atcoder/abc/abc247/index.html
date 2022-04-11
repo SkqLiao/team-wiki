@@ -555,11 +555,9 @@
 
 <div class="admonition note">
 <p class="admonition-title"><a href="https://atcoder.jp/contests/abc247/tasks/abc247_h">Ex - Rearranging Problem</a></p>
+<p><span class="arithmatex">\(n\)</span>个人，编号为<span class="arithmatex">\(1\sim n\)</span>排成一排，每个人有个颜色<span class="arithmatex">\(c_i\)</span>。现在人的位置任意交换<span class="arithmatex">\(K\)</span>次，问所有可能形成的编号排列中有多少种满足第<span class="arithmatex">\(i\)</span>个位置上的人颜色仍为<span class="arithmatex">\(c_i\)</span>。</p>
+<p>n\leq 2\times 10^5</p>
 </div>
-<pre><code>$n$个人，编号为$1\sim n$排成一排，每个人有个颜色$c_i$。现在人的位置任意交换$K$次，问所有可能形成的编号排列中有多少种满足第$i$个位置上的人颜色仍为$c_i$。
-
-n\leq 2\times 10^5
-</code></pre>
 <p>这个题需要知道几个性质：</p>
 <ul>
 <li>对于一个任意一个排列，连边<span class="arithmatex">\(i\rightarrow p_i\)</span>，它置换成原排列的最小步数就是(<span class="arithmatex">\(n-\)</span>环的个数)。</li>
@@ -570,7 +568,7 @@ n\leq 2\times 10^5
 <p>我们对每种颜色分别求出形成<span class="arithmatex">\(1\sim cnt\)</span>个环的方案数，然后卷一下就可以了。考虑现在某种颜色有<span class="arithmatex">\(n\)</span>个，要形成<span class="arithmatex">\(k\)</span>个环，等价于个元素划分成<span class="arithmatex">\(k\)</span>个非空轮换的方案数，也即第一类斯特林数，这个可以多项式求一下。</p>
 <p>最后需要堆优化的合并，复杂度<span class="arithmatex">\(O(n\log ^2n)\)</span></p>
 <p>测试了一下多项式板子，用起来还可以。</p>
-<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
 #define fi first
 #define se second
 #define pb push_back
