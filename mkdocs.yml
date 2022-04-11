@@ -1,14 +1,28 @@
 site_name: 「So Proficient」 Team Wiki
-#theme:
-#  name: material
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
 
 nav:
   - Home: index.md
-  - About: about.md
   - VP: vp.md
-  - AtCoder: atcoder.md
+  - AtCoder:
+      - AtCoder Beginner Contest:
+          - AtCoder Beginner Contest 241: atcoder/abc/abc241.md
+          - AtCoder Beginner Contest 242: atcoder/abc/abc242.md
+          - AtCoder Beginner Contest 243: atcoder/abc/abc243.md
+          - AtCoder Beginner Contest 244: atcoder/abc/abc244.md
+          - AtCoder Beginner Contest 245: atcoder/abc/abc245.md
   - Codeforces: codeforces.md
-  - Others: contests/index.md
+  - Other Contests:
+      - 2022 武汉大学新生赛: contests/whu-2022-fresh.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
