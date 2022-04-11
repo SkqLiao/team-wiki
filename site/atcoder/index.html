@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>AtCoder - 「So Proficient」 Team Wiki</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">「So Proficient」 Team Wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../vp/" class="nav-link">VP</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">AtCoder</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../codeforces/" class="nav-link">Codeforces</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../contests/" class="nav-link">Others</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../vp/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../codeforces/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#atcoder-beginner-contest-241" class="nav-link">AtCoder Beginner Contest 241</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#atcoder-beginner-contest-242" class="nav-link">AtCoder Beginner Contest 242</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#atcoder-beginner-contest-243" class="nav-link">AtCoder Beginner Contest 243</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#atcoder-beginner-contest-244" class="nav-link">AtCoder Beginner Contest 244</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#atcoder-beginner-contest-245" class="nav-link">AtCoder Beginner Contest 245</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="atcoder-beginner-contest-241">AtCoder Beginner Contest 241</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc241/tasks/abc241_g">G - Round Robin</a></p>
+<p><span class="arithmatex">\(n\)</span> 个人，任意两人之间都有一场比赛，一共 <span class="arithmatex">\(\frac{n\times(n-1)}{2}\)</span> 场。比赛只有胜负，没有平局。</p>
+<p>已知 <span class="arithmatex">\(m\)</span> 局比赛的胜负，问如果自由安排剩下比赛的胜负，哪些选手可能夺冠？（即胜的场数大于其他所有人）</p>
+<p><span class="arithmatex">\(n\leq 50\)</span></p>
+</div>
+<p>若想要让 <span class="arithmatex">\(x\)</span> 夺冠，则会将他在所有未完成的比赛中获胜，此时可以统计出他的总胜场 <span class="arithmatex">\(w[x]\)</span>。</p>
+<p>若 <span class="arithmatex">\(x\)</span> 能成功夺冠，当且仅当剩下的比赛存在一种胜负方案，使得其他人的胜场都小于 <span class="arithmatex">\(w[x]\)</span>。</p>
+<p>考虑最大流模型。</p>
+<p>原理是，由于每场比赛都有胜者，没有平局。因此将源点与它们连边，流量限制为 <span class="arithmatex">\(1\)</span>（表示有一个胜者需要分配），然后将每场比赛向可能成为胜者的点连边。通过设置每个人到汇点的流量限制，来限制每个点胜场的上限（除了夺冠者的其他人的获胜场数不能超过 <span class="arithmatex">\(w[x]-1\)</span>）。最终可以通过最大流是否为比赛场数来判断能否分配所有比赛的胜负。</p>
+<p>具体来说，除了源点 <span class="arithmatex">\(s\)</span>，汇点 <span class="arithmatex">\(t\)</span> 之外，还有点 <span class="arithmatex">\(A_{i,j}(1\leq i&lt;j\leq n)\)</span> 和 <span class="arithmatex">\(B_i(1\leq i\leq n)\)</span>。</p>
+<p><span class="arithmatex">\(s\)</span> 向 <span class="arithmatex">\(A_{i,j}\)</span> 连流量限制为 <span class="arithmatex">\(1\)</span> 的边。</p>
+<p><span class="arithmatex">\(A_{i,j}\)</span> 表示 <span class="arithmatex">\(i\)</span> 和 <span class="arithmatex">\(j\)</span> 之间的比赛，若 <span class="arithmatex">\(i\)</span> 获胜，连接 <span class="arithmatex">\((A_{i,j},B_i)\)</span>，若 <span class="arithmatex">\(j\)</span> 获胜，连接 <span class="arithmatex">\((A_{i,j},B_j)\)</span>，若尚未决出胜负，则同时向 <span class="arithmatex">\(B_i,B_j\)</span> 连边。边的流量限制都是 <span class="arithmatex">\(1\)</span>。</p>
+<p><span class="arithmatex">\(B_x\)</span> 向 <span class="arithmatex">\(t\)</span> 连接流量为 <span class="arithmatex">\(w[x]\)</span> 的边，其他 <span class="arithmatex">\(B_i\)</span> 向 <span class="arithmatex">\(t\)</span> 连接流量为 <span class="arithmatex">\(w[x] - 1\)</span> 的边。</p>
+<p>若最大流为 <span class="arithmatex">\(\frac{n\times(n-1)}{2}\)</span>，则说明 <span class="arithmatex">\(x\)</span> 可以夺冠。</p>
+<p>对于每个 <span class="arithmatex">\(x\)</span> 都重新建图跑最大流，复杂度 <span class="arithmatex">\(O(n^4)\)</span>。</p>
+<h2 id="atcoder-beginner-contest-242">AtCoder Beginner Contest 242</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc242/tasks/abc242_f">F - Black and White Rooks</a></p>
+<p>在 <span class="arithmatex">\(n\times m\)</span> 的网格图上放置 <span class="arithmatex">\(a\)</span> 个白棋和 <span class="arithmatex">\(b\)</span> 个黑棋，每个格子最多放置一个棋子，且同一行/同一列中不能同时存在黑白棋子。求有多少种喝法的放置方案。</p>
+<p><span class="arithmatex">\(n,m\leq 50\)</span></p>
+</div>
+<p>分别枚举白棋和黑棋所占的行数和列数，然后容斥原理即可得到答案。</p>
+<p><span class="arithmatex">\(ans=\sum\limits_{i=0}^{n}\sum\limits_{j=0}^{m}\sum\limits_{x=0}^{n-i}\sum\limits_{y=0}^{m-j}\binom{i}{n}\binom{j}{m}\binom{x}{n-i}\binom{y}{m-j}\binom{a}{ij}\binom{b}{xy}\)</span></p>
+<h2 id="atcoder-beginner-contest-243">AtCoder Beginner Contest 243</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc243/tasks/abc243_f">F - Lottery</a></p>
+<p>一共有 <span class="arithmatex">\(n\)</span> 个奖品，获得第 <span class="arithmatex">\(i\)</span> 个奖品的概率为 <span class="arithmatex">\(p_i\)</span> （<span class="arithmatex">\(\sum{p_i}=1\)</span> ）。求 <span class="arithmatex">\(k\)</span> 次抽奖后，获得恰好 <span class="arithmatex">\(m\)</span> 个不同奖品的概率。</p>
+<p><span class="arithmatex">\(k,n,m\leq 50\)</span></p>
+</div>
+<p>多项分布的概率： <span class="arithmatex">\(P(X_1=c_1,\cdots,X_N=c_N)=\frac{K!}{\prod\limits_{i=1}^{N}{c_i}}\times\prod\limits_{i=1}^{N}{p_i^{c_i}}\)</span>，即抽样 <span class="arithmatex">\(K\)</span> 次获得 <span class="arithmatex">\(N\)</span> 种不同的结果，其中 <span class="arithmatex">\(X_i\)</span> 出现 <span class="arithmatex">\(c_i\)</span> 次的概率。 </p>
+<p>则 <span class="arithmatex">\(f[x][y][z]\)</span> 表示经过 <span class="arithmatex">\(z\)</span> 次抽奖，在前 <span class="arithmatex">\(i\)</span> 种奖品中抽中 <span class="arithmatex">\(y\)</span> 种不同奖品的概率。</p>
+<p>枚举当前奖品抽中的次数，则 <span class="arithmatex">\(f[x+1][y+[a\not=0]][z+a]\leftarrow f[x][y][z]\times \frac{p_{x+1}^a}{a!}\)</span>。</p>
+<p>答案为 <span class="arithmatex">\(f[n][m][k]\times k!\)</span>。</p>
+<p>复杂度 <span class="arithmatex">\(O(nmk^2)\)</span>。</p>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc243/tasks/abc243_g">G - Sqrt</a></p>
+<p>有一个无限长的序列，第一项为 <span class="arithmatex">\(x\)</span>。构造规则为每次选择 <span class="arithmatex">\([1,\lfloor{\sqrt{x}}\rfloor]\)</span> 中的一个数插到序列末尾。求最终得到多少种不同的序列。</p>
+<p><span class="arithmatex">\(x\leq 9\times 10^{18}\)</span></p>
+</div>
+<p>当末尾为 <span class="arithmatex">\(1\)</span> 时，序列的后面就只能无限插入 <span class="arithmatex">\(1\)</span>，无法再产生新的序列。</p>
+<p>根据 <span class="arithmatex">\(x\)</span> 的范围，序列的第三个数将不会超过 <span class="arithmatex">\(x^{\frac{1}{4}}&lt;55000\)</span>，后面的数取值范围，可只会更小，可以直接暴力算。</p>
+<p>记 <span class="arithmatex">\(f_i(x)\)</span> 为序列第 <span class="arithmatex">\(i\)</span> 位为 <span class="arithmatex">\(x\)</span> 的不同序列数，则 <span class="arithmatex">\(f_{i+1}(a)=\sum\limits_{b=a^2}^{x}{f_{i}(b)}\)</span>。</p>
+<p>而 <span class="arithmatex">\(f_{3}(a)=\sum\limits_{b=a^2}^{x}{f_{2}(b)}=\lfloor{\sqrt{x}}\rfloor-a^2+1\)</span>，<span class="arithmatex">\(a\in[1,\lfloor{x^{\frac{1}{4}}}\rfloor]\)</span>。</p>
+<h2 id="atcoder-beginner-contest-244">AtCoder Beginner Contest 244</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc244/tasks/abc244_g">G - Construct Good Path</a></p>
+<p>给定一张无向连通图，输出一个长度不超过 <span class="arithmatex">\(4n\)</span> 的路径，使得每个点的访问次数的奇偶性与给定的 <span class="arithmatex">\(01\)</span> 串相同。</p>
+<p><span class="arithmatex">\(n\leq 10^5\)</span></p>
+</div>
+<p>想在不改变路径的前提下改变某个点 <span class="arithmatex">\(a\)</span> 的奇偶性，只需要将某条边 <span class="arithmatex">\((a,b)\)</span> 来回走三遍即可，即 <span class="arithmatex">\(a\rightarrow b\rightarrow (a\rightarrow b)\)</span>（虽然此时 <span class="arithmatex">\(b\)</span> 奇偶性也改变了，但可以继续通过该方法反转它的奇偶性）。</p>
+<p>得到图的任意一棵生成树，记录其欧拉序，则每个点的访问次数的奇偶性已知。从叶子节点开始，若当前点的奇偶性与 <span class="arithmatex">\(01\)</span> 串相异，则在返回 <span class="arithmatex">\(fa_x\)</span> 后再重复该边，即 <span class="arithmatex">\(x\rightarrow fa_x\rightarrow (x\rightarrow fa_x)\)</span> ，此时 <span class="arithmatex">\(x\)</span> 与 <span class="arithmatex">\(fa_x\)</span> 的奇偶性同时反转。回到根结点时，除根结点外的所有节点的奇偶性与给定 <span class="arithmatex">\(01\)</span> 串一致。</p>
+<p>若此时根结点的奇偶性与 <span class="arithmatex">\(01\)</span> 串相同，则已经得到要求的路径，否则只需要在序列末尾增加 <span class="arithmatex">\(root \rightarrow \cdots\rightarrow root(\rightarrow v\rightarrow root\rightarrow v)\)</span>，此时 <span class="arithmatex">\(v\)</span> 的奇偶性不变，而 <span class="arithmatex">\(root\)</span> 的奇偶性改变，则所有点的奇偶性都与给定 <span class="arithmatex">\(01\)</span> 串相同。</p>
+<p>树的欧拉序的长度为所有点的度数之和，为 <span class="arithmatex">\(2n-1\)</span>。最劣情况下所有边都被重复，此时长度为 <span class="arithmatex">\(4n-3\)</span>，再加上末尾额外增加的长度为 <span class="arithmatex">\(3\)</span> 的路径 <span class="arithmatex">\(\rightarrow v\rightarrow root\rightarrow v\)</span>，路径长度的最大值恰好为 <span class="arithmatex">\(4n\)</span>。</p>
+<h2 id="atcoder-beginner-contest-245">AtCoder Beginner Contest 245</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc245/tasks/abc245_e">E - Wrapping Chocolate</a></p>
+<p>有 <span class="arithmatex">\(n\)</span> 个物品，大小为 <span class="arithmatex">\(a_i\times b_i\)</span>。有 <span class="arithmatex">\(m\)</span> 个盒子，大小为 <span class="arithmatex">\(c_i\times d_i\)</span>。每个盒子至多放一件物品，且不能旋转。求是否能将这 <span class="arithmatex">\(n\)</span> 个物品全部放进盒子中。</p>
+<p><span class="arithmatex">\(1\leq n\leq m\leq 2\times10^5\)</span></p>
+</div>
+<p>本着贪心的思想，显然会找尽可能小的盒子来装物品。</p>
+<p>但是由于物品的尺度有两维，因此需要保持一维有序的情况下取另一维最小的。</p>
+<p>将 <span class="arithmatex">\((a_i,b_i)\)</span> 和 <span class="arithmatex">\((c_i,d_i)\)</span> 放在一起，倒序排序。</p>
+<p>此时，若是个盒子，将第二维 <span class="arithmatex">\(d_i\)</span> 放进盒子的集合中。</p>
+<p>如果是个物品。由于第一维已经倒序排列，因此集合中的所有盒子的第一维均满足条件，而没有插入集合的所有盒子的第一维均不符合条件。本着贪心的思想，取出集合中第一个大于等于 <span class="arithmatex">\(b_i\)</span> 的 <span class="arithmatex">\(d_i\)</span> 与之匹配。若不存在，则无解。</p>
+<p>复杂度 <span class="arithmatex">\(O((n+m)\log(n+m))\)</span>。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

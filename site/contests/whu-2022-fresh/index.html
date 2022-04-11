@@ -7,15 +7,15 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>About - 「So Proficient」 Team Wiki</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Whu 2022 fresh - 「So Proficient」 Team Wiki</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">「So Proficient」 Team Wiki</a>
+                <a class="navbar-brand" href="../..">「So Proficient」 Team Wiki</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,22 +34,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">About</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="../vp/" class="nav-link">VP</a>
+                                <a href="../../about/" class="nav-link">About</a>
                             </li>
                             <li class="navitem">
-                                <a href="../atcoder/" class="nav-link">AtCoder</a>
+                                <a href="../../vp/" class="nav-link">VP</a>
                             </li>
                             <li class="navitem">
-                                <a href="../codeforces/" class="nav-link">Codeforces</a>
+                                <a href="../../atcoder/" class="nav-link">AtCoder</a>
                             </li>
                             <li class="navitem">
-                                <a href="../contests/" class="nav-link">Others</a>
+                                <a href="../../codeforces/" class="nav-link">Codeforces</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../" class="nav-link">Others</a>
                             </li>
                         </ul>
 
@@ -59,16 +59,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../vp/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -87,7 +77,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">关于我们</a>
+            <li class="nav-item" data-level="2"><a href="#2021" class="nav-link">2021武汉大学新生赛</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -96,9 +86,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">关于我们</h1>
-<p><a href="https://codeforces.com/team/91336">So Proficient</a>，来自北京理工大学，队员有 <a href="https://codeforces.com/profile/Durant_Lee">Durant_Lee</a>、<a href="https://codeforces.com/profile/SkqLiiiao">SkqLiiiao</a> 和 <a href="https://codeforces.com/profile/vandoor">vandoor</a>（Codeforces ID字典序升序排列）。</p>
-<p>本Wiki主要记录平时vp以及Codeforces/AtCoder等比赛的部分题的题解，更新频率和语言风格不定。</p></div>
+<h2 id="2021">2021武汉大学新生赛</h2>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://ac.nowcoder.com/acm/contest/31620/I">I 异度之刃</a></p>
+<p>长为 <span class="arithmatex">\(n\)</span> 的序列 <span class="arithmatex">\(a\)</span>，有 <span class="arithmatex">\(m\)</span> 组询问。每次查询区间 <span class="arithmatex">\([l,r]\)</span> 中，有多少个「本质不同」的「连续上升」的子串。</p>
+<p><span class="arithmatex">\(n,m\leq 10^6\)</span></p>
+</div>
+<p>注意到多组查询且无修改，考虑将查询按照右端点排序后，离线操作。</p>
+<p>由于右端点不断向右移动，因此对于本质相同的子串，我们只需要保存最右侧的即可。</p>
+<p>记 <span class="arithmatex">\(f[i]\)</span> 为左端点为 <span class="arithmatex">\(i\)</span> 的连续上升的子串个数（本质相同的子串只在最右侧的左端点处被统计），则每次查询的答案为 <span class="arithmatex">\(\sum\limits_{i=l}^{r}{f[i]}\)</span>。</p>
+<p>移动右端点 <span class="arithmatex">\(r\)</span>，记 <span class="arithmatex">\([l,r]\)</span> 是以 <span class="arithmatex">\(r\)</span> 为右端点且最长的「连续上升」子串，则由于 <span class="arithmatex">\(r\)</span> 的加入，区间 <span class="arithmatex">\(f[l\sim r]\)</span> 都增加 <span class="arithmatex">\(1\)</span>。</p>
+<p>下面考虑消除左侧「本质相同」的子串的影响，显然这些「本质相同」的子串的末尾元素与 <span class="arithmatex">\(a[r]\)</span> 相同。</p>
+<p>对于每个值开一个单调栈，记录三个值：</p>
+<ul>
+<li>它的位置 <span class="arithmatex">\(rp\)</span></li>
+<li>以 <span class="arithmatex">\(rp\)</span> 为右端点的最长「连续上升」子串的左端点 <span class="arithmatex">\(la\)</span></li>
+<li>当前「连续上升」子串的右端点 <span class="arithmatex">\(ra\)</span></li>
+</ul>
+<p>注意到 <span class="arithmatex">\([la,rp]\)</span> 是最长「连续」上升子串，而 <span class="arithmatex">\([la,r]\)</span> 是它的一个前缀。</p>
+<p>栈是单调的，自底向上 <span class="arithmatex">\(rp-la+1\)</span> （即最大子串长度）依次递减。</p>
+<p>单调递减的原因在于，如果右侧出现一个长度更大的「连续子串」，则靠左的那些子串都会被删去（本质相同且更靠左）。只有当更左侧的子串长度更大时，它比右侧子串长的那部分才会被保留（长度小于等于右侧的部分被删除），这也就是第三个变量 <span class="arithmatex">\(ra\)</span> 的意义。</p>
+<p>对于当前子串 <span class="arithmatex">\([l,r,r]\)</span>，对于当前栈顶 <span class="arithmatex">\([la,ra,rp]\)</span>，若 <span class="arithmatex">\(rp-la\leq r-l\)</span> ，则弹出栈顶，同时 <span class="arithmatex">\(f[la\sim ra]\)</span> 减一。</p>
+<p>否则，考虑删去 <span class="arithmatex">\([la,ra,rp]\)</span> 中长度不超过 <span class="arithmatex">\(r-l+1\)</span> 的部分，即 <span class="arithmatex">\([rp-(r-l),rp]\)</span>。但由于它此前部分后缀已经被删除，因此实际是 <span class="arithmatex">\(f[rp-(r-l)\sim ra]\)</span> 减一，并更新 <span class="arithmatex">\(ra\)</span> 为 <span class="arithmatex">\(rp-(r-l+1)\)</span> 。</p>
+<p><span class="arithmatex">\(ra\)</span> 实际上就是当前子串中，未被删除的实际右端点。</p>
+<p>最后将 <span class="arithmatex">\([l,r,r]\)</span> 插入栈顶。</p>
+<p>区间加法和求和用线段树维护。</p>
+<p>复杂度 <span class="arithmatex">\(O((n+m)\log{n})\)</span>。</p></div>
             </div>
         </div>
 
@@ -107,14 +120,14 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../javascripts/mathjax.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../javascripts/mathjax.js" defer></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
