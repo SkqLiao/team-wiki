@@ -1,0 +1,953 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>AtCoder Beginner Contest 247 - 「So Proficient」 Team Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="「So Proficient」 Team Wiki" class="md-header__button md-logo" aria-label="「So Proficient」 Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            「So Proficient」 Team Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AtCoder Beginner Contest 247
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../vp/" class="md-tabs__link">
+      VP
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../abc241/" class="md-tabs__link md-tabs__link--active">
+        AtCoder
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../codeforces/" class="md-tabs__link">
+      Codeforces
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../contests/whu-2022-fresh/" class="md-tabs__link">
+        Other Contests
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="「So Proficient」 Team Wiki" class="md-nav__button md-logo" aria-label="「So Proficient」 Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    「So Proficient」 Team Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/" class="md-nav__link">
+        VP
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          AtCoder
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="AtCoder" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          AtCoder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          AtCoder Beginner Contest
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="AtCoder Beginner Contest" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AtCoder Beginner Contest
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc241/" class="md-nav__link">
+        AtCoder Beginner Contest 241
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc242/" class="md-nav__link">
+        AtCoder Beginner Contest 242
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc243/" class="md-nav__link">
+        AtCoder Beginner Contest 243
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc244/" class="md-nav__link">
+        AtCoder Beginner Contest 244
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc245/" class="md-nav__link">
+        AtCoder Beginner Contest 245
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        AtCoder Beginner Contest 247
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../codeforces/" class="md-nav__link">
+        Codeforces
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Other Contests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Other Contests" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Other Contests
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/whu-2022-fresh/" class="md-nav__link">
+        2022 武汉大学新生赛
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>AtCoder Beginner Contest 247</h1>
+
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc247/tasks/abc247_h">Ex - Rearranging Problem</a></p>
+</div>
+<pre><code>$n$个人，编号为$1\sim n$排成一排，每个人有个颜色$c_i$。现在人的位置任意交换$K$次，问所有可能形成的编号排列中有多少种满足第$i$个位置上的人颜色仍为$c_i$。
+
+n\leq 2\times 10^5
+</code></pre>
+<p>这个题需要知道几个性质：</p>
+<ul>
+<li>对于一个任意一个排列，连边<span class="arithmatex">\(i\rightarrow p_i\)</span>，它置换成原排列的最小步数就是(<span class="arithmatex">\(n-\)</span>环的个数)。</li>
+<li>每次交换会使得环的个数<span class="arithmatex">\(+1/-1\)</span>。</li>
+</ul>
+<p>证明略。</p>
+<p>考虑初始状态和最终状态，实际上形成的每个环都是同色的，最终状态相当于从每种颜色选若干个环。假设总共选了<span class="arithmatex">\(c\)</span>个，那么当<span class="arithmatex">\(n-c\leq K\)</span>且<span class="arithmatex">\((K-(n-c))\equiv 0(\text{mod}\ 2)\)</span>时，这个方案是合法的。</p>
+<p>我们对每种颜色分别求出形成<span class="arithmatex">\(1\sim cnt\)</span>个环的方案数，然后卷一下就可以了。考虑现在某种颜色有<span class="arithmatex">\(n\)</span>个，要形成<span class="arithmatex">\(k\)</span>个环，等价于个元素划分成<span class="arithmatex">\(k\)</span>个非空轮换的方案数，也即第一类斯特林数，这个可以多项式求一下。</p>
+<p>最后需要堆优化的合并，复杂度<span class="arithmatex">\(O(n\log ^2n)\)</span></p>
+<p>测试了一下多项式板子，用起来还可以。</p>
+<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+#define fi first
+#define se second
+#define pb push_back
+#define mkp make_pair
+using namespace std;
+
+using vi=vector&lt;int&gt;;
+typedef double db;
+typedef pair&lt;int,int&gt; pii;
+typedef long long ll;
+
+int read(){
+    int ret=0,f=0;char c=getchar();
+    while(!isdigit(c)){if(c=='-')f=1;c=getchar();}
+    while(isdigit(c)){ret=ret*10+(c^48);c=getchar();}
+    return f?-ret:ret;
+}
+
+const int N =(1&lt;&lt;20)|100;
+const int p = 998244353, gg = 3, ig = 332738118, img = 86583718;
+const int mod = 998244353;
+
+int qpow(int x,int y){
+    int ret=1;
+    for(;y;y&gt;&gt;=1,x=1ll*x*x%mod)
+        if(y&amp;1) ret=1ll*ret*x%mod;
+    return ret;
+}
+
+namespace Poly
+{
+    #define mul(x, y) (1ll * x * y &gt;= mod ? 1ll * x * y % mod : 1ll * x * y)
+    #define minus(x, y) (1ll * x - y &lt; 0 ? 1ll * x - y + mod : 1ll * x - y)
+    #define plus(x, y) (1ll * x + y &gt;= mod ? 1ll * x + y - mod : 1ll * x + y)
+    #define ck(x) (x &gt;= mod ? x - mod : x)//取模运算太慢了
+
+    typedef vector&lt;int&gt; poly;
+    const int G = 3;//根据具体的模数而定，原根可不一定不一样！！！
+    //一般模数的原根为 2 3 5 7 10 6
+    const int inv_G = qpow(G, mod - 2);
+    int RR[N], deer[2][19][N], inv[N];
+
+
+    void init(const int t) {//预处理出来NTT里需要的w和wn，砍掉了一个log的时间
+        for(int p = 1; p &lt;= t; ++ p) {
+            int buf1 = qpow(G, (mod - 1) / (1 &lt;&lt; p));
+            int buf0 = qpow(inv_G, (mod - 1) / (1 &lt;&lt; p));
+            deer[0][p][0] = deer[1][p][0] = 1;
+            for(int i = 1; i &lt; (1 &lt;&lt; p); ++ i) {
+                deer[0][p][i] = 1ll * deer[0][p][i - 1] * buf0 % mod;//逆
+                deer[1][p][i] = 1ll * deer[1][p][i - 1] * buf1 % mod;
+            }
+        }
+        inv[1] = 1;
+        for(int i = 2; i &lt;= (1 &lt;&lt; t); ++ i)
+            inv[i] = 1ll * inv[mod % i] * (mod - mod / i) % mod;
+    }
+
+    int NTT_init(int n) {//快速数论变换预处理
+        int limit = 1, L = 0;
+        while(limit &lt;= n) limit &lt;&lt;= 1, L ++ ;
+        for(int i = 0; i &lt; limit; ++ i)
+            RR[i] = (RR[i &gt;&gt; 1] &gt;&gt; 1) | ((i &amp; 1) &lt;&lt; (L - 1));
+        return limit;
+    }
+
+    void NTT(poly &amp;A, int type, int limit) {//快速数论变换
+        A.resize(limit);
+        for(int i = 0; i &lt; limit; ++ i)
+            if(i &lt; RR[i])
+                swap(A[i], A[RR[i]]);
+        for(int mid = 2, j = 1; mid &lt;= limit; mid &lt;&lt;= 1, ++ j) {
+            int len = mid &gt;&gt; 1;
+            for(int pos = 0; pos &lt; limit; pos += mid) {
+                int *wn = deer[type][j];
+                for(int i = pos; i &lt; pos + len; ++ i, ++ wn) {
+                    int tmp = 1ll * (*wn) * A[i + len] % mod;
+                    A[i + len] = ck(A[i] - tmp + mod);
+                    A[i] = ck(A[i] + tmp);
+                }
+            }
+        }
+        if(type == 0) {
+            for(int i = 0; i &lt; limit; ++ i)
+                A[i] = 1ll * A[i] * inv[limit] % mod;
+        }
+    }
+
+    poly poly_mul(poly A, poly B) {//多项式乘法
+        int deg = A.size() + B.size() - 1;
+        int limit = NTT_init(deg);
+        poly C(limit);
+        NTT(A, 1, limit);
+        NTT(B, 1, limit);
+        for(int i = 0; i &lt; limit; ++ i)
+            C[i] = 1ll * A[i] * B[i] % mod;
+        NTT(C, 0, limit);
+        C.resize(deg);
+        return C;
+    }
+
+    poly poly_inv(poly &amp;f, int deg) {//多项式求逆
+        if(deg == 1)
+            return poly(1, qpow(f[0], mod - 2));
+
+        poly A(f.begin(), f.begin() + deg);
+        poly B = poly_inv(f, (deg + 1) &gt;&gt; 1);
+        int limit = NTT_init(deg &lt;&lt; 1);
+        NTT(A, 1, limit), NTT(B, 1, limit);
+        for(int i = 0; i &lt; limit; ++ i)
+            A[i] = B[i] * (2 - 1ll * A[i] * B[i] % mod + mod) % mod;
+        NTT(A, 0, limit);
+        A.resize(deg);
+        return A;
+    }
+
+    poly poly_dev(poly f) {//多项式求导
+        int n = f.size();
+        for(int i = 1; i &lt; n; ++ i) f[i - 1] = 1ll * f[i] * i % mod;
+        return f.resize(n - 1), f;//f[0] = 0，这里直接扔了,从1开始
+    }
+
+    poly poly_idev(poly f) {//多项式求积分
+        int n = f.size();
+        for(int i = n - 1; i ; -- i) f[i] = 1ll * f[i - 1] * inv[i] % mod;
+        return f[0] = 0, f;
+    }
+
+    poly poly_ln(poly f, int deg) {//多项式求对数
+        poly A = poly_idev(poly_mul(poly_dev(f), poly_inv(f, deg)));
+        return A.resize(deg), A;
+    }
+
+    poly poly_exp(poly &amp;f, int deg) {//多项式求指数
+        if(deg == 1)
+            return poly(1, 1);
+
+        poly B = poly_exp(f, (deg + 1) &gt;&gt; 1);
+        B.resize(deg);
+        poly lnB = poly_ln(B, deg);
+        for(int i = 0; i &lt; deg; ++ i)
+            lnB[i] = ck(f[i] - lnB[i] + mod);
+
+        int limit = NTT_init(deg &lt;&lt; 1);//n -&gt; n^2
+        NTT(B, 1, limit), NTT(lnB, 1, limit);
+        for(int i = 0; i &lt; limit; ++ i)
+            B[i] = 1ll * B[i] * (1 + lnB[i]) % mod;
+        NTT(B, 0, limit);
+        B.resize(deg);
+        return B;
+    }
+
+    poly poly_sqrt(poly &amp;f, int deg) {//多项式开方
+        if(deg == 1) return poly(1, 1);
+        poly A(f.begin(), f.begin() + deg);
+        poly B = poly_sqrt(f, (deg + 1) &gt;&gt; 1);
+        poly IB = poly_inv(B, deg);
+        int limit = NTT_init(deg &lt;&lt; 1);
+        NTT(A, 1, limit), NTT(IB, 1, limit);
+        for(int i = 0; i &lt; limit; ++ i)
+            A[i] = 1ll * A[i] * IB[i] % mod;
+        NTT(A, 0, limit);
+        for(int i =0; i &lt; deg; ++ i)
+            A[i] = 1ll * (A[i] + B[i]) * inv[2] % mod;
+        A.resize(deg);
+        return A;
+    }
+
+    poly poly_pow(poly f, int k) {//多项式快速幂
+        f = poly_ln(f, f.size());
+        for(auto &amp;x : f) x = 1ll * x * k % mod;
+        return poly_exp(f, f.size());
+    }
+
+    poly poly_cos(poly f, int deg) {//多项式三角函数（cos）
+        poly A(f.begin(), f.begin() + deg);
+        poly B(deg), C(deg);
+        for(int i = 0; i &lt; deg; ++ i)
+            A[i] = 1ll * A[i] * img % mod;
+
+        B = poly_exp(A, deg);
+        C = poly_inv(B, deg);
+        int inv2 = qpow(2, mod - 2);
+        for(int i = 0; i &lt; deg; ++ i)
+            A[i] = 1ll * (1ll * B[i] + C[i]) % mod * inv2 % mod;
+        return A;
+    }
+
+    poly poly_sin(poly f, int deg) {//多项式三角函数（sin）
+        poly A(f.begin(), f.begin() + deg);
+        poly B(deg), C(deg);
+        for(int i = 0; i &lt; deg; ++ i)
+            A[i] = 1ll * A[i] * img % mod;
+
+        B = poly_exp(A, deg);
+        C = poly_inv(B, deg);
+        int inv2i = qpow(img &lt;&lt; 1, mod - 2);
+        for(int i = 0; i &lt; deg; ++ i)
+            A[i] = 1ll * (1ll * B[i] - C[i] + mod) % mod * inv2i % mod;
+        return A;
+    }
+
+    poly poly_arcsin(poly f, int deg) {
+        poly A(f.size()), B(f.size()), C(f.size());
+        A = poly_dev(f);
+        B = poly_mul(f, f);
+        for(int i = 0; i &lt; deg; ++ i)
+            B[i] = minus(mod, B[i]);
+        B[0] = plus(B[0], 1);
+        C = poly_sqrt(B, deg);
+        C = poly_inv(C, deg);
+        C = poly_mul(A, C);
+        C = poly_idev(C);
+        return C;
+    }
+
+    poly poly_arctan(poly f, int deg) {
+        poly A(f.size()), B(f.size()), C(f.size());
+        A = poly_dev(f);
+        B = poly_mul(f, f);
+        B[0] = plus(B[0], 1);
+        C = poly_inv(B, deg);
+        C = poly_mul(A, C);
+        C = poly_idev(C);
+        return C;
+    }
+
+
+    poly multiply_all(vector&lt;poly&gt;p){
+        int len=p.size();
+        priority_queue&lt;pii,vector&lt;pii&gt;,greater&lt;pii&gt; &gt;q;
+        for(int i=0;i&lt;len;++i) q.push(mkp(p[i].size(),i));
+        for(;len&gt;1;){
+            auto u=q.top();q.pop();
+            auto v=q.top();q.pop();
+            --len;
+            p[v.se]=poly_mul(p[u.se],p[v.se]);
+            q.push(mkp(p[v.se].size(),v.se));
+        }
+        return p[q.top().se];
+    }
+}
+
+using Poly::poly;
+
+int n,K;
+int cnt[N];
+
+poly calc(int n){
+    if(n==1) return {0,1};
+    vector&lt;poly&gt; p;
+    for(int i=0;i&lt;n;++i) p.pb({i,1});
+    return Poly::multiply_all(p);
+/*
+似乎写
+n=1 {1}
+else i=1~n-1,{1,i}
+第i项就是s(n,n-i)
+*/
+}
+
+void solve(){
+    Poly::init(19);
+    int n=read(),K=read();
+    for(int i=1;i&lt;=n;++i) ++cnt[read()];
+
+    vector&lt;poly&gt; vec;
+    for(int i=1;i&lt;=n;++i) 
+        if(cnt[i]) vec.pb(calc(cnt[i]));
+    poly ans=Poly::multiply_all(vec);int fans=0;
+    for(int i=1;i&lt;(int)ans.size();++i)
+        if((K-(n-i))%2==0 &amp;&amp; n-i&lt;=K &amp;&amp; n-i&gt;=0) fans=(fans+ans[i])%mod;
+    printf(&quot;%d\n&quot;,fans);
+}
+
+signed main(){
+    for(int cas=1;cas--;){
+        solve();
+    }
+    return 0;
+}
+</code></pre>
+<hr />
+<p>其他题目其实没啥讲的，E题写了个st表+二分搞过去的。</p>
+<p>值得一提的是C题dls给了一个看上去很厉害的东西叫<strong>basic_string<Type></strong></p>
+<p>这个东西好像是string的内部实现，一般Type是char，它类似一个可拼接的vector，于是我们有了string里面的'+'操作。</p>
+<p>但是事实上可以用其他类型来替换，比如说int，于是C题可以这么写：</p>
+<pre><code class="language-c++">int n;
+basic_string&lt;int&gt;s;
+void solve(){
+    int n=read();
+    s={1};
+    for(int i=2;i&lt;=n;++i){
+        s=s+basic_string&lt;int&gt;{i}+s;
+    }
+    for(auto v:s) printf(&quot;%d &quot;,v); 
+    puts(&quot;&quot;);
+}
+</code></pre>
+<p>然后还可以用string里面会用到的.find()之类的函数。</p>
+<p>似乎这个Type也可以是自定义类型，但是需要重载运算符，可惜我不太会，看队友怎么填个坑，以后vector就被淘汰了（bushi）。</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../abc245/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AtCoder Beginner Contest 245" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              AtCoder Beginner Contest 245
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../codeforces/" class="md-footer__link md-footer__link--next" aria-label="Next: Codeforces" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Codeforces
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
