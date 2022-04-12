@@ -6,15 +6,15 @@
 
 ## 更新记录
 
-| 比赛名称                     | 更新日期   | 是否完成 |
-| ---------------------------- | ---------- | -------- |
-| AtCoder Beginner Contest 241 | 2022-04-11 |          |
-| AtCoder Beginner Contest 242 | 2022-04-11 |          |
-| AtCoder Beginner Contest 243 | 2022-04-11 |          |
-| AtCoder Beginner Contest 244 | 2022-04-11 |          |
-| AtCoder Beginner Contest 245 | 2022-04-11 |          |
-| AtCoder Beginner Contest 247 | 2022-04-11 |          |
-| 2022 武汉大学新生赛          | 2022-04-11 |          |
-| AtCoder Beginner Contest 235 | 2022-04-12 |          |
-|                              |            |          |
+| 比赛名称                                            | 更新日期   | 是否完成 |
+| --------------------------------------------------- | ---------- | -------- |
+| [AtCoder Beginner Contest 241](atcoder/abc/abc241/) | 2022-04-11 |          |
+| [AtCoder Beginner Contest 242](atcoder/abc/abc242/) | 2022-04-11 |          |
+| [AtCoder Beginner Contest 243](atcoder/abc/abc243/) | 2022-04-11 |          |
+| [AtCoder Beginner Contest 244](atcoder/abc/abc244/) | 2022-04-11 |          |
+| [AtCoder Beginner Contest 245](atcoder/abc/abc245/) | 2022-04-11 |          |
+| [AtCoder Beginner Contest 247](atcoder/abc/abc247/) | 2022-04-11 |          |
+| [2022 武汉大学新生赛](contests/whu-2022-fresh/)     | 2022-04-11 |          |
+| [AtCoder Beginner Contest 235](atcoder/abc/abc235/) | 2022-04-12 |          |
+|                                                     |            |          |
 
