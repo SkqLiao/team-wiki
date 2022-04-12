@@ -15,6 +15,7 @@ nav:
   - VP: vp.md
   - AtCoder:
       - AtCoder Beginner Contest:
+          - AtCoder Beginner Contest 235: atcoder/abc/abc235.md
           - AtCoder Beginner Contest 241: atcoder/abc/abc241.md
           - AtCoder Beginner Contest 242: atcoder/abc/abc242.md
           - AtCoder Beginner Contest 243: atcoder/abc/abc243.md
