@@ -13,7 +13,7 @@
     
     
       
-        <title>AtCoder Beginner Contest 243 - 「So Proficient」 Team Wiki</title>
+        <title>AtCoder Beginner Contest 246 - 「So Proficient」 Team Wiki</title>
       
     
     
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AtCoder Beginner Contest 243
+              AtCoder Beginner Contest 246
             
           </span>
         </div>
@@ -180,7 +180,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../abc241/" class="md-tabs__link md-tabs__link--active">
+      <a href="../abc235/" class="md-tabs__link md-tabs__link--active">
         AtCoder
       </a>
     </li>
@@ -351,6 +351,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3_1">
@@ -364,6 +368,20 @@
           AtCoder Beginner Contest
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc235/" class="md-nav__link">
+        AtCoder Beginner Contest 235
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -397,19 +415,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../abc243/" class="md-nav__link">
         AtCoder Beginner Contest 243
       </a>
-      
     </li>
   
 
@@ -438,6 +448,28 @@
       <a href="../abc245/" class="md-nav__link">
         AtCoder Beginner Contest 245
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        AtCoder Beginner Contest 246
+      </a>
+      
     </li>
   
 
@@ -551,27 +583,14 @@
                 
 
 
-  <h1>AtCoder Beginner Contest 243</h1>
+  <h1>AtCoder Beginner Contest 246</h1>
 
 <div class="admonition note">
-<p class="admonition-title"><a href="https://atcoder.jp/contests/abc243/tasks/abc243_f">F - Lottery</a></p>
-<p>一共有 <span class="arithmatex">\(n\)</span> 个奖品，获得第 <span class="arithmatex">\(i\)</span> 个奖品的概率为 <span class="arithmatex">\(p_i\)</span> （<span class="arithmatex">\(\sum{p_i}=1\)</span> ）。求 <span class="arithmatex">\(k\)</span> 次抽奖后，获得恰好 <span class="arithmatex">\(m\)</span> 个不同奖品的概率。</p>
-<p><span class="arithmatex">\(k,n,m\leq 50\)</span></p>
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc246/tasks/abc246_h">Ex - 01? Queries</a></p>
+<p>给你一个长为<span class="arithmatex">\(N\)</span>的串<span class="arithmatex">\(S\)</span>，<span class="arithmatex">\(S\)</span>中只包含<span class="arithmatex">\(0,1,?\)</span></p>
+<p>以及<span class="arithmatex">\(Q\)</span>组询问，<span class="arithmatex">\((x_i,c_i)\)</span>，表示将<span class="arithmatex">\(x_i\)</span>处的字符改为<span class="arithmatex">\(c_i\)</span>后，将所有<span class="arithmatex">\(?\)</span>自由地赋成<span class="arithmatex">\(0\)</span>或<span class="arithmatex">\(1\)</span>，能产生的所有本质不同的子序列的数量。</p>
+<p><span class="arithmatex">\(1 \leq N,Q \leq 10^5\)</span> </p>
 </div>
-<p>多项分布的概率： <span class="arithmatex">\(P(X_1=c_1,\cdots,X_N=c_N)=\frac{K!}{\prod\limits_{i=1}^{N}{c_i}}\times\prod\limits_{i=1}^{N}{p_i^{c_i}}\)</span>，即抽样 <span class="arithmatex">\(K\)</span> 次获得 <span class="arithmatex">\(N\)</span> 种不同的结果，其中 <span class="arithmatex">\(X_i\)</span> 出现 <span class="arithmatex">\(c_i\)</span> 次的概率。 </p>
-<p>则 <span class="arithmatex">\(f[x][y][z]\)</span> 表示经过 <span class="arithmatex">\(z\)</span> 次抽奖，在前 <span class="arithmatex">\(i\)</span> 种奖品中抽中 <span class="arithmatex">\(y\)</span> 种不同奖品的概率。</p>
-<p>枚举当前奖品抽中的次数，则 <span class="arithmatex">\(f[x+1][y+[a\not=0]][z+a]\leftarrow f[x][y][z]\times \frac{p_{x+1}^a}{a!}\)</span>。</p>
-<p>答案为 <span class="arithmatex">\(f[n][m][k]\times k!\)</span>。</p>
-<p>复杂度 <span class="arithmatex">\(O(nmk^2)\)</span>。</p>
-<div class="admonition note">
-<p class="admonition-title"><a href="https://atcoder.jp/contests/abc243/tasks/abc243_g">G - Sqrt</a></p>
-<p>有一个无限长的序列，第一项为 <span class="arithmatex">\(x\)</span>。构造规则为每次选择 <span class="arithmatex">\([1,\lfloor{\sqrt{x}}\rfloor]\)</span> 中的一个数插到序列末尾。求最终得到多少种不同的序列。</p>
-<p><span class="arithmatex">\(x\leq 9\times 10^{18}\)</span></p>
-</div>
-<p>当末尾为 <span class="arithmatex">\(1\)</span> 时，序列的后面就只能无限插入 <span class="arithmatex">\(1\)</span>，无法再产生新的序列。</p>
-<p>根据 <span class="arithmatex">\(x\)</span> 的范围，序列的第三个数将不会超过 <span class="arithmatex">\(x^{\frac{1}{4}}&lt;55000\)</span>，后面的数取值范围，可只会更小，可以直接暴力算。</p>
-<p>记 <span class="arithmatex">\(f_i(x)\)</span> 为序列第 <span class="arithmatex">\(i\)</span> 位为 <span class="arithmatex">\(x\)</span> 的不同序列数，则 <span class="arithmatex">\(f_{i+1}(a)=\sum\limits_{b=a^2}^{x}{f_{i}(b)}\)</span>。</p>
-<p>而 <span class="arithmatex">\(f_{3}(a)=\sum\limits_{b=a^2}^{x}{f_{2}(b)}=\lfloor{\sqrt{x}}\rfloor-a^2+1\)</span>，<span class="arithmatex">\(a\in[1,\lfloor{x^{\frac{1}{4}}}\rfloor]\)</span>。</p>
 
               
             </article>
@@ -585,7 +604,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../abc242/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AtCoder Beginner Contest 242" rel="prev">
+        <a href="../abc245/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AtCoder Beginner Contest 245" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -594,20 +613,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              AtCoder Beginner Contest 242
+              AtCoder Beginner Contest 245
             </div>
           </div>
         </a>
       
       
         
-        <a href="../abc244/" class="md-footer__link md-footer__link--next" aria-label="Next: AtCoder Beginner Contest 244" rel="next">
+        <a href="../abc247/" class="md-footer__link md-footer__link--next" aria-label="Next: AtCoder Beginner Contest 247" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              AtCoder Beginner Contest 244
+              AtCoder Beginner Contest 247
             </div>
           </div>
           <div class="md-footer__button md-icon">
