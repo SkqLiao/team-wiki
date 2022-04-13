@@ -569,10 +569,12 @@
 
   <h1>AtCoder Beginner Contest 235</h1>
 
-<p>!!! note <a href="https://atcoder.jp/contests/abc235/tasks/abc235_f">F - Variety of Digits</a></p>
-<p>​   给定数字集合 <span class="arithmatex">\(M\)</span>，求 <span class="arithmatex">\(1\sim N\)</span> 中满足数位集合包含 <span class="arithmatex">\(M\)</span> 的数的和，对 <span class="arithmatex">\(998244353\)</span> 取模。</p>
-<p>​   例如 <span class="arithmatex">\(M=\{1,2\}\)</span>，<span class="arithmatex">\(x=123\)</span>，则 <span class="arithmatex">\(x\)</span> 的数位集合为 <span class="arithmatex">\(\{1,2,3\}\)</span> 包含 <span class="arithmatex">\(\{1,2\}\)</span>，因此符合条件。</p>
-<p>​   <span class="arithmatex">\(N\leq 10^{10^4}\)</span></p>
+<div class="admonition note">
+<p class="admonition-title"><a href="https://atcoder.jp/contests/abc235/tasks/abc235_f">F - Variety of Digits</a></p>
+<p>给定数字集合 <span class="arithmatex">\(M\)</span>，求 <span class="arithmatex">\(1\sim N\)</span> 中满足数位集合包含 <span class="arithmatex">\(M\)</span> 的数的和，对 <span class="arithmatex">\(998244353\)</span> 取模。</p>
+<p>例如 <span class="arithmatex">\(M=\{1,2\}\)</span>，<span class="arithmatex">\(x=123\)</span>，则 <span class="arithmatex">\(x\)</span> 的数位集合为 <span class="arithmatex">\(\{1,2,3\}\)</span> 包含 <span class="arithmatex">\(\{1,2\}\)</span>，因此符合条件。</p>
+<p><span class="arithmatex">\(N\leq 10^{10^4}\)</span></p>
+</div>
 <p>数位DP，记状态 <span class="arithmatex">\(f(n,k,zero,limit)\)</span> 和 <span class="arithmatex">\(g(n,k,zero,limit)\)</span>。</p>
 <ul>
 <li>
