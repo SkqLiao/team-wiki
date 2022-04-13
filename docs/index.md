@@ -17,4 +17,4 @@
 | [2022 武汉大学新生赛](contests/whu-2022-fresh/)     | 2022-04-11 |          |
 | [AtCoder Beginner Contest 235](atcoder/abc/abc235/) | 2022-04-12 |          |
 | [AtCoder Beginner Contest 246](atcoder/abc/abc246/) | 2022-04-12 |          |
-
+| [AtCoder Beginner Contest 236](atcoder/abc/abc236/) | 2022-04-13 |          |
