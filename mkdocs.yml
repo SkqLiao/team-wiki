@@ -28,6 +28,7 @@ nav:
   - Codeforces: codeforces.md
   - Other Contests:
       - 2022 武汉大学新生赛: contests/whu-2022-fresh.md
+      - NERC2022: contests/nerc2022.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
