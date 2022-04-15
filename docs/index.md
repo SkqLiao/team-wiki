@@ -18,4 +18,5 @@
 | [AtCoder Beginner Contest 235](atcoder/abc/abc235/) | 2022-04-12 |          |
 | [AtCoder Beginner Contest 246](atcoder/abc/abc246/) | 2022-04-12 |          |
 | [AtCoder Beginner Contest 236](atcoder/abc/abc236/) | 2022-04-13 |          |
-| [NERC2022](contests/nerc2022/) | 2022-04-14 |          |
+| [NERC2022](contests/nerc2022/)                      | 2022-04-14 |          |
+| [AtCoder Beginner Contest 232](atcoder/abc/abc232/) | 2022-04-15 |          |
