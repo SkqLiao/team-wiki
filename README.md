@@ -1,4 +1,4 @@
-[Wiki 主页](skqliao.github.io)
+[Wiki 主页](https://skqliao.github.io)
 
 ## 关于我们
 
