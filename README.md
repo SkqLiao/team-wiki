@@ -23,3 +23,4 @@
 | [NERC2022](contests/nerc2022/)                                                                | 2022-04-14 | EJ       |
 | [AtCoder Beginner Contest 232](atcoder/abc/abc232/)                                           | 2022-04-15 | F        |
 | [2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)](vp/cf-gym-103483) | 2022-04-15 | ACHIL    |
+| [AtCoder Beginner Contest 248](atcoder/abc/abc248/)                                           | 2022-04-18 | GH        |
