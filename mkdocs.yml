@@ -15,6 +15,7 @@ nav:
   - Home: index.md
   - VP:
       - 2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII): vp/cf-gym-103483.md
+      - Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara): vp/cf-gym-102916.md 
   - AtCoder:
       - AtCoder Beginner Contest:
           - AtCoder Beginner Contest 232: atcoder/abc/abc232.md
