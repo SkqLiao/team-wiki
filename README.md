@@ -4,6 +4,8 @@
 
 [So Proficient](https://codeforces.com/team/91336)，来自北京理工大学，队员有 [Durant_Lee](https://codeforces.com/profile/Durant_Lee)、[SkqLiiiao](https://codeforces.com/profile/SkqLiiiao) 和 [vandoor](https://codeforces.com/profile/vandoor)（Codeforces ID字典序升序排列）。
 
+2021年：CCPC（桂林）银牌、ICPC（沈阳）银牌、ICPC（济南）银牌。
+
 本Wiki主要记录平时vp以及Codeforces/AtCoder等比赛的部分题的题解，更新频率和语言风格不定。
 
 ## 更新记录
@@ -23,5 +25,5 @@
 | [NERC2022](contests/nerc2022/)                                                                | 2022-04-14 | EJ       |
 | [AtCoder Beginner Contest 232](atcoder/abc/abc232/)                                           | 2022-04-15 | F        |
 | [2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)](vp/cf-gym-103483) | 2022-04-15 | ACHIL    |
-| [AtCoder Beginner Contest 248](atcoder/abc/abc248/)                                           | 2022-04-18 | GH        |
-| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](vp/cf-gym-102916) | 2022-04-18 | ACDFHL    |
+| [AtCoder Beginner Contest 248](atcoder/abc/abc248/)                                           | 2022-04-18 | GH       |
+| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](vp/cf-gym-102916)         | 2022-04-18 | ACDFHL   |
