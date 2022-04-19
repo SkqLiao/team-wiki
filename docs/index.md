@@ -24,5 +24,5 @@
 | [AtCoder Beginner Contest 232](https://skqliao.github.io/atcoder/abc/abc232/)                                           | 2022-04-15 | F        |
 | [2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)](https://skqliao.github.io/vp/cf-gym-103483) | 2022-04-15 | ACHIL    |
 | [AtCoder Beginner Contest 248](https://skqliao.github.io/atcoder/abc/abc248/)                                           | 2022-04-18 | GH       |
-| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](https://skqliao.github.io/vp/cf-gym-102916)         | 2022-04-18 | ACDFHL   |
+| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](https://skqliao.github.io/vp/cf-gym-102916)         | 2022-04-18 | ACDFHLM  |
 | [AtCoder Beginner Contest 229](https://skqliao.github.io/atcoder/abc/abc229/)                                           | 2022-04-19 | G        |
