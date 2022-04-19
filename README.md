@@ -10,21 +10,21 @@
 
 ## 更新记录
 
-| 比赛名称                                                                                                                | 更新日期   | 完成情况 |
-| ----------------------------------------------------------------------------------------------------------------------- | ---------- | -------- |
-| [AtCoder Beginner Contest 241](https://skqliao.github.io/atcoder/abc/abc241/)                                           | 2022-04-11 | G        |
-| [AtCoder Beginner Contest 242](https://skqliao.github.io/atcoder/abc/abc242/)                                           | 2022-04-11 | F        |
-| [AtCoder Beginner Contest 243](https://skqliao.github.io/atcoder/abc/abc243/)                                           | 2022-04-11 | FG       |
-| [AtCoder Beginner Contest 244](https://skqliao.github.io/atcoder/abc/abc244/)                                           | 2022-04-11 | G        |
-| [AtCoder Beginner Contest 245](https://skqliao.github.io/atcoder/abc/abc245/)                                           | 2022-04-11 | E        |
-| [AtCoder Beginner Contest 247](https://skqliao.github.io/atcoder/abc/abc247/)                                           | 2022-04-11 | Ex       |
-| [2022 武汉大学新生赛](https://skqliao.github.io/contests/whu-2022-fresh/)                                               | 2022-04-11 | I        |
-| [AtCoder Beginner Contest 235](https://skqliao.github.io/atcoder/abc/abc235/)                                           | 2022-04-12 | F        |
-| [AtCoder Beginner Contest 246](https://skqliao.github.io/atcoder/abc/abc246/)                                           | 2022-04-12 |          |
-| [AtCoder Beginner Contest 236](https://skqliao.github.io/atcoder/abc/abc236/)                                           | 2022-04-13 | F        |
-| [NERC2022](https://skqliao.github.io/contests/nerc2022/)                                                                | 2022-04-14 | EJ       |
-| [AtCoder Beginner Contest 232](https://skqliao.github.io/atcoder/abc/abc232/)                                           | 2022-04-15 | F        |
-| [2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)](https://skqliao.github.io/vp/cf-gym-103483) | 2022-04-15 | ACHIL    |
-| [AtCoder Beginner Contest 248](https://skqliao.github.io/atcoder/abc/abc248/)                                           | 2022-04-18 | GH       |
-| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](https://skqliao.github.io/vp/cf-gym-102916)         | 2022-04-18 | ACDFHLM  |
-| [AtCoder Beginner Contest 229](https://skqliao.github.io/atcoder/abc/abc229/)                                           | 2022-04-19 | G        |
+| 比赛名称                                                     | 更新日期   |
+| ------------------------------------------------------------ | ---------- |
+| [AtCoder Beginner Contest 241](https://skqliao.github.io/atcoder/abc/abc241/) | 2022-04-11 |
+| [AtCoder Beginner Contest 242](https://skqliao.github.io/atcoder/abc/abc242/) | 2022-04-11 |
+| [AtCoder Beginner Contest 243](https://skqliao.github.io/atcoder/abc/abc243/) | 2022-04-11 |
+| [AtCoder Beginner Contest 244](https://skqliao.github.io/atcoder/abc/abc244/) | 2022-04-11 |
+| [AtCoder Beginner Contest 245](https://skqliao.github.io/atcoder/abc/abc245/) | 2022-04-11 |
+| [AtCoder Beginner Contest 247](https://skqliao.github.io/atcoder/abc/abc247/) | 2022-04-11 |
+| [2022 武汉大学新生赛](https://skqliao.github.io/contests/whu-2022-fresh/) | 2022-04-11 |
+| [AtCoder Beginner Contest 235](https://skqliao.github.io/atcoder/abc/abc235/) | 2022-04-12 |
+| [AtCoder Beginner Contest 246](https://skqliao.github.io/atcoder/abc/abc246/) | 2022-04-12 |
+| [AtCoder Beginner Contest 236](https://skqliao.github.io/atcoder/abc/abc236/) | 2022-04-13 |
+| [NERC2022](https://skqliao.github.io/contests/nerc2022/)     | 2022-04-14 |
+| [AtCoder Beginner Contest 232](https://skqliao.github.io/atcoder/abc/abc232/) | 2022-04-15 |
+| [2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)](https://skqliao.github.io/vp/cf-gym-103483) | 2022-04-15 |
+| [AtCoder Beginner Contest 248](https://skqliao.github.io/atcoder/abc/abc248/) | 2022-04-18 |
+| [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](https://skqliao.github.io/vp/cf-gym-102916) | 2022-04-18 |
+| [AtCoder Beginner Contest 229](https://skqliao.github.io/atcoder/abc/abc229/) | 2022-04-19 |
