@@ -29,3 +29,4 @@
 | [Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)](https://skqliao.github.io/vp/cf-gym-102916) | 2022-04-18 |
 | [AtCoder Beginner Contest 229](https://skqliao.github.io/atcoder/abc/abc229/) | 2022-04-19 |
 | [The 2021 ICPC Asia Kunming Regional Programming Contest](https://skqliao.github.io/vp/nowcoder-32708) | 2022-04-25 |
+| [AtCoder Beginner Contest 249](https://skqliao.github.io/atcoder/abc/abc249/) | 2022-04-26 |
