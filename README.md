@@ -32,3 +32,4 @@
 | [AtCoder Beginner Contest 249](https://skqliao.github.io/atcoder/abc/abc249/) | 2022-04-26 |
 | [XXI Open Cup, Grand Prix of Korea](https://skqliao.github.io/vp/cf-gym-102759) | 2022-05-02 |
 | [XXII Open Cup, Grand Prix of Southeastern Europe](https://skqliao.github.io/vp/cf-gym-103439) | 2022-05-03 |
+| [XXII Open Cup, Grand Prix of Korea](https://skqliao.github.io/vp/cf-gym-103371) | 2022-05-05 |
