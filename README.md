@@ -34,3 +34,4 @@
 | [XXII Open Cup, Grand Prix of Southeastern Europe](https://skqliao.github.io/vp/cf-gym-103439)                          | 2022-05-03 |
 | [XXII Open Cup, Grand Prix of Korea](https://skqliao.github.io/vp/cf-gym-103371)                                        | 2022-05-05 |
 | [AtCoder Beginner Contest 254](https://skqliao.github.io/atcoder/abc/abc254/)                                           | 2022-06-04 |
+| [2022“杭电杯”中国大学生算法设计超级联赛（2）](http://acm.hdu.edu.cn/contest/problems?cid=1045)                            | 2022-06-04 |

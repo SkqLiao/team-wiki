@@ -40,6 +40,7 @@ nav:
   - Other Contests:
       - 2022 武汉大学新生赛: contests/whu-2022-fresh.md
       - NERC2022: contests/nerc2022.md
+      - 2022杭电多校(2): contests/hdu2022-2.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
