@@ -4,7 +4,7 @@
 
 [So Proficient](https://skqliao.github.io/https://codeforces.com/team/91336)，来自北京理工大学，队员有 [Durant_Lee](https://skqliao.github.io/https://codeforces.com/profile/Durant_Lee)、[SkqLiiiao](https://skqliao.github.io/https://codeforces.com/profile/SkqLiiiao) 和 [vandoor](https://skqliao.github.io/https://codeforces.com/profile/vandoor)（Codeforces ID字典序升序排列）。
 
-2021年：CCPC（桂林）银牌、ICPC（沈阳）银牌、ICPC（济南）银牌、ICPC EC final铜牌。
+2021年：CCPC（桂林）银牌、ICPC（沈阳）银牌、ICPC（济南）银牌、ICPC（EC final）铜牌。
 
 本Wiki主要记录平时vp以及Codeforces/AtCoder等比赛的部分题的题解，更新频率和语言风格不定。
 
