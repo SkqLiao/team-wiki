@@ -4,7 +4,7 @@
 
 2021年：CCPC（桂林）银牌、ICPC（沈阳）银牌、ICPC（济南）银牌、ICPC（EC final）铜牌。
 
-本Wiki主要记录平时vp以及Codeforces/AtCoder等比赛的部分题的题解，更新频率和语言风格不定。
+本Wiki主要记录平时vp以及Codeforces/AtCoder/多校等比赛的部分题的题解，更新频率和语言风格不定。
 
 ## 更新记录
 
