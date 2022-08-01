@@ -38,3 +38,4 @@
 | [2022牛客多校（3）](https://skqliao.github.io/contests/nowcoder2022-3)                                                          | 2022-07-26 |
 | [2022“杭电杯”中国大学生算法设计超级联赛（3）](https://skqliao.github.io/contests/hdu2022-3)                          | 2022-07-26 |
 | [2022“杭电杯”中国大学生算法设计超级联赛（1）](https://skqliao.github.io/contests/hdu2022-1)                          | 2022-07-31 |
+| [CodeTON Round 2 (Div.1 + Div.2)](https://skqliao.github.io/codeforces/cf1704)                          | 2022-08-01 |
