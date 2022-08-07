@@ -47,6 +47,7 @@ nav:
       - 2022杭电多校(3): contests/hdu2022-3.md
       - 2022杭电多校(5): contests/hdu2022-5.md
       - 2022杭电多校(6): contests/hdu2022-6.md
+      - 2022牛客多校(6): contests/nowcoder2022-6.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
