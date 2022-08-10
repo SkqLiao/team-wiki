@@ -1,3 +1,147 @@
+!!!note "[C. Forest](https://ac.nowcoder.com/acm/contest/33191/C)"
+    
+    求一个图所有的生成子图的生成森林的权值的和。$n\le 16$
+
+先将边按权值排序，考虑每一条边计入答案的方案数，即那些编号小于他的边加入后他的两个端点还没有连通的方案数。一个朴素的做法是枚举包含u和v的集合S，并枚举子集使得包含u但不包含v。然后算出使得这两个分别连通的方案数，并乘上随便选那些还没考虑到的边，和不包含在S内的边的方案数，这样复杂度是3^n的。
+
+然后考虑利用集合幂级数优化。集合幂级数是形如$\sum_{s\subseteq U} f(s)x^s$的玩意，注意其指数为集合。考虑如何定义它的乘法，就是要用集合的运算来定义。设$*$为集合幂级数的乘法，$\cdot$为集合的运算。
+
+$F*G=\sum_{s\subseteq U}\sum_{t\subseteq U}f(s)g(t)x^{s\cdot t}$。
+
+如果$\cdot$是集合并运算，那么就可以做如下转换：
+
+令$\hat F=\sum_{s\subseteq U}x^s\sum_{i\subseteq s}f(i)$
+这个变换被称为莫比乌斯变换。
+
+那么$F*G=\sum_{s\subseteq U}x^s\sum_{i \subseteq s}f(i)\sum_{j\subseteq s}g(j)=\sum_{s\subseteq U} x^s[x^s]\hat F[x^s]\hat G$
+
+所以两个幂级数求乘积相当于进行莫比乌斯变换过后再对各个集合求点积，再逆莫比乌斯变换回去。
+
+原题要求的是子集卷积。
+
+那就需要记录每个集合的时候顺便记录popcount，即$F(|S|,S)$，然后对每个FMT过后的集合，相当于有一个数组记录了原集合中popcount为i的那些点值和，对于集合$S$和$T$，只取集合并卷积中popcount为$|S|+|T|$的那些值，这可以看做固定$|S|$,$|T|$后（关于集合的点积意义下），进行多项式卷积。
+
+总结一下：如果将集合幂级数乘法定义为子集卷积，即FMT后对每个集合进行多项式卷积，IFMT后取F(|S|,S)，同理任何多项式函数也是一样。
+
+对于原题，需要求一个使得$S$连通的方案数，$G(x)=e^F$即为任意选边的方案数，而$f^{\phi}=1$，$f(S)=2^{S包含的边数}$，所以需要求的是F的ln，照常进行FMT，进行点积意义下的ln(1+x)，这里由于项数只有popcount个，考虑暴力求：
+$$
+F'=\ln'(G+1)=\frac{G'}{G+1}\\
+F'=G'-F'G\\
+f_i=g'[i]-\sum_{j=1}^n f_ig[i]
+$$
+这样可以$n^2$求出多项式ln。
+
+这样，每考虑进一条边，都重新算一下G，再进行FMT后ln的操作后取F[|S|][S]，即可得到$S$连通的方案，从而只需要$2^{已加入边数}$-这个结果就可以了。
+
+```cpp
+#include<bits/stdc++.h>
+#define rep(i,a,b) for(int i=(a),i##ss=(b);i<=i##ss;i++)
+#define dwn(i,a,b) for(int i=(a),i##ss=(b);i>=i##ss;i--)
+#define rng(i,a,b) for(int i=(a);i<(b);i++)
+#define deb(x) cerr<<(#x)<<":"<<(x)<<'\n'
+#define pb push_back
+#define mkp make_pair
+#define fi first
+#define se second
+#define hvie '\n'
+using namespace std;
+typedef pair<int,int> pii;
+typedef long long ll;
+typedef unsigned long long ull;
+typedef double db;
+int yh(){
+	int ret=0;bool f=0;char c=getchar();
+	while(!isdigit(c)){if(c==EOF)return -1;if(c=='-')f=1;c=getchar();}
+	while(isdigit(c))ret=(ret<<3)+(ret<<1)+(c^48),c=getchar();
+	return f?-ret:ret;
+}
+const int maxn=3e5+5,mod=998244353,inv2=(mod+1)/2;
+int add(int x,int y){x+=y;return x>=mod?x-mod:x;}
+int mul(ll x,ll y){return x*y%mod;}
+void FMT(int *a,int n){
+	for(int mid=1;mid<n;mid<<=1){
+		for(int R=mid<<1,j=0;j<n;j+=R){
+			for(int k=0;k<mid;k++){
+				a[j+k+mid]=add(a[j+k+mid],a[j+k]);
+			}
+		}
+	}
+}
+void IFMT(int *a,int n){
+	for(int mid=1;mid<n;mid<<=1){
+		for(int R=mid<<1,j=0;j<n;j+=R){
+			for(int k=0;k<mid;k++){
+				a[j+k+mid]=add(a[j+k+mid],mod-a[j+k]);
+			}
+		}
+	}
+}
+int inv[maxn];
+int cnte[maxn];
+int n,mask,pop[maxn],G[20][maxn];
+void recalc(){
+	memset(G,0,sizeof(G));
+	rep(i,1,mask){
+		G[pop[i]][i]=cnte[i];
+	}
+	rep(i,0,n) FMT(G[i],1<<n);
+	static int a[20],f[20];
+	rep(S,1,mask){
+		rep(i,0,n) a[i]=G[i][S];
+		rep(i,0,n-1){
+			int res=0;
+			for(int j=0;j<i;j++){
+				res=add(res,mul(f[j], a[i-j]));
+			}
+			f[i]=add(mul(a[i+1],i+1),mod-res);
+		}
+		rep(i,1,n){
+			G[i][S]=mul(f[i-1],inv[i]);
+		}
+	}
+	rep(i,0,n) IFMT(G[i],1<<n);
+
+}
+signed main(){
+	inv[1]=1;
+	rep(i,2,100){
+		inv[i]=mod-mul(mod/i,inv[mod%i]);
+	}
+
+	n=yh(),mask=(1<<n)-1;
+	rep(i,0,mask) pop[i]=pop[i>>1]+(i&1),cnte[i]=1;
+	vector<array<int,3>>v;
+	int pwe=1;
+	rep(i,0,n-1)rep(j,0,n-1){
+		int x=yh();
+		if(x&&i<j){
+			v.pb({x,i,j});
+			pwe=2ll*pwe%mod;
+		}
+	}
+	sort(v.begin(),v.end());
+	int ans=0;
+	for(auto [w,x,y]:v){
+		// cout<<w<<' '<<x<<' '<<y<<endl;
+		pwe=mul(pwe,inv2);
+		recalc();
+		int res=0;
+		rep(S,1,mask)if((S>>x&1)&&(S>>y&1)){
+			res=add(res,mul(G[pop[S]][S],cnte[mask^S]));
+		}
+		res=add(cnte[mask],mod-res);
+		// cout<<res<<endl;
+		ans=add(ans, mul(res, mul(pwe, w)));
+		rep(S,0,mask)if((S>>x&1)&&(S>>y&1)){
+			cnte[S]=mul(cnte[S],2);
+		}
+	}
+	cout<<ans<<hvie;
+	return 0;
+}
+```
+
+
 !!!note "[F. Hash](https://ac.nowcoder.com/acm/contest/33191/F)"
 
 	定义一棵树$T$的哈希值$F(T)$为:$F(T)=\sum_{i=1}^n\sum_{j=i+1}^n X^iY^jZ^{\text{lca}(i,j)}$ 对$998244353$取模的结果。
