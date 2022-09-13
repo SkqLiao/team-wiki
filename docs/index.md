@@ -10,6 +10,7 @@
 
 | 比赛名称                                                     | 更新日期   |
 | ------------------------------------------------------------ | ---------- |
+| [CCPC2022网络赛](https://skqliao.github.io/contests/ccpc-online-2022) | 2022-09-13 |
 | [2022“杭电杯”中国大学生算法设计超级联赛（8）](https://skqliao.github.io/contests/hdu2022-8) | 2022-08-13 |
 | [2022牛客多校（7）](https://skqliao.github.io/contests/nowcoder2022-7) | 2022-08-10 |
 | [2022牛客多校（6）](https://skqliao.github.io/contests/nowcoder2022-6) | 2022-08-07 |
