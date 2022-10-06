@@ -23,6 +23,7 @@ nav:
       - 2022 Shanghai Collegiate Programming Contest: vp/cf-gym-103931.md
   - AtCoder:
       - AtCoder Beginner Contest:
+          - AtCoder Beginner Contest G: atcoder/abc/abc-g.md
           - AtCoder Beginner Contest 229: atcoder/abc/abc229.md
           - AtCoder Beginner Contest 232: atcoder/abc/abc232.md
           - AtCoder Beginner Contest 235: atcoder/abc/abc235.md
