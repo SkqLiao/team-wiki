@@ -10,6 +10,7 @@
 
 | 比赛名称                                                     | 更新日期   |
 | ------------------------------------------------------------ | ---------- |
+| [2019-2020 ICPC Southeastern European Regional Programming Contest (SEERC 2019)](https://skqliao.github.io/vp/cf-gym-102392)    |2022-10-22|
 | [2019-2020 ICPC Northwestern European Regional Programming Contest (NWERC 2019)](https://skqliao.github.io/vp/cf-gym-102500)                       | 2022-10-18 |
 | [2018-2019 9th BSUIR Open Programming Championship. Semifinal](https://skqliao.github.io/vp/cf-gym-102439)                       | 2022-10-18 |
 | [2022 Shanghai Collegiate Programming Contest](https://skqliao.github.io/vp/cf-gym-103931)                                        | 2022-10-05 |
