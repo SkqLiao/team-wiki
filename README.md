@@ -12,6 +12,7 @@
 
 | 比赛名称                                                                                                                | 更新日期   |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [2018-2019 9th BSUIR Open Programming Championship. Final](https://skqliao.github.io/vp/cf-gym-102441)    |2022-11-02|
 | [2020-2021 Russia Team Open, High School Programming Contest (VKOSHP 20)](https://skqliao.github.io/vp/cf-gym-102893)    |2022-10-25|
 | [2019-2020 ICPC Southeastern European Regional Programming Contest (SEERC 2019)](https://skqliao.github.io/vp/cf-gym-102392)    |2022-10-22|
 | [2019-2020 ICPC Northwestern European Regional Programming Contest (NWERC 2019)](https://skqliao.github.io/vp/cf-gym-102500)                       | 2022-10-18 |
