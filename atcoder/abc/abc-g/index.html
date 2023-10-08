@@ -1,0 +1,1925 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../vp/cf-gym-102441/">
+      
+      
+        <link rel="next" href="../abc229/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+    
+    
+      
+        <title>AtCoder Beginner Contest G - 「So Proficient」 Team Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abc-g" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="「So Proficient」 Team Wiki" class="md-header__button md-logo" aria-label="「So Proficient」 Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            「So Proficient」 Team Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AtCoder Beginner Contest G
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../vp/cf-gym-103483/" class="md-tabs__link">
+          
+  
+    
+  
+  Virtual Participation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  AtCoder
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../codeforces/cf1704/" class="md-tabs__link">
+          
+  
+    
+  
+  Codeforces
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../contests/ccpc-online-2022/" class="md-tabs__link">
+          
+  
+    
+  
+  Other Contests
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="「So Proficient」 Team Wiki" class="md-nav__button md-logo" aria-label="「So Proficient」 Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    「So Proficient」 Team Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Participation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Participation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-103483/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2021-2022 Russia Team Open, High School Programming Contest (VKOSHP XXII)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102916/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Samara Farewell Contest 2020 (XXI Open Cup, Grand Prix of Samara)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/nowcoder-32708/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The 2021 ICPC Asia Kunming Regional Programming Contest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102759/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XXI Open Cup, Grand Prix of Korea
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-103439/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XXII Open Cup, Grand Prix of Southeastern Europe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-103371/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XXII Open Cup, Grand Prix of Korea
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-103931/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022 Shanghai Collegiate Programming Contest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102439/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2018-2019 9th BSUIR Open Programming Championship. Semifinal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102500/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2019-2020 ICPC Northwestern European Regional Programming Contest (NWERC 2019)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102392/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2019-2020 ICPC Southeastern European Regional Programming Contest (SEERC 2019)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102893/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2020-2021 Russia Team Open, High School Programming Contest (VKOSHP 20)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vp/cf-gym-102441/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2018-2019 9th BSUIR Open Programming Championship. Final
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    AtCoder
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AtCoder
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            AtCoder Beginner Contest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest G
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest G
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abc-270-g-sequence-in-mod-p" class="md-nav__link">
+    ABC 270 G - Sequence in mod P
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-239-g-builder-takahashi" class="md-nav__link">
+    ABC 239 G - Builder Takahashi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-237-g-range-sort-query" class="md-nav__link">
+    ABC 237 G - Range Sort Query
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-247-g-dream-team" class="md-nav__link">
+    ABC 247 G - Dream Team
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-238-g-cubic" class="md-nav__link">
+    ABC 238 G - Cubic?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-267-g-increasing-k-times" class="md-nav__link">
+    ABC 267 G - Increasing K Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-256-g-black-and-white-stones" class="md-nav__link">
+    ABC 256 G - Black and White Stones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-246-g-game-on-tree-3" class="md-nav__link">
+    ABC 246 G - Game on Tree 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-234-g-divide-a-sequence" class="md-nav__link">
+    ABC 234 G - Divide a Sequence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-223-g-vertex-deletion" class="md-nav__link">
+    ABC 223 G - Vertex Deletion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-230-g-gcd-permutation" class="md-nav__link">
+    ABC 230 G - GCD Permutation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-236-g-good-vertices" class="md-nav__link">
+    ABC 236 G - Good Vertices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-249-g-xor-cards" class="md-nav__link">
+    ABC 249 G - Xor Cards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-248-g-gcd-cost-on-the-tree" class="md-nav__link">
+    ABC 248 G - GCD cost on the tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-225-g-x" class="md-nav__link">
+    ABC 225 G - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-271-g-access-counter" class="md-nav__link">
+    ABC 271 G - Access Counter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-235-g-gardens" class="md-nav__link">
+    ABC 235 G - Gardens
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-232-g-modulo-shortest-path" class="md-nav__link">
+    ABC 232 G - Modulo Shortest Path
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc229/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 229
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc232/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 232
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc235/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 235
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc236/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 236
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc241/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 241
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc242/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 242
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc243/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 243
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc244/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 244
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc245/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 245
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc246/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 246
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc247/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 247
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc248/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 248
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc249/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 249
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abc254/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AtCoder Beginner Contest 254
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Codeforces
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Codeforces
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../codeforces/cf1704/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CodeTON Round 2 (Div.1+Div.2)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Other Contests
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Other Contests
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/ccpc-online-2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CCPC2022网络赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/whu-2022-fresh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022 武汉大学新生赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/nerc2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NERC2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(1)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(2)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/nowcoder2022-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022牛客多校(3)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(3)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(5)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(6)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/nowcoder2022-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022牛客多校(6)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/nowcoder2022-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022牛客多校(7)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contests/hdu2022-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022杭电多校(8)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="abc-g">ABC G题汇总</h1>
+<h2 id="abc-270-g-sequence-in-mod-p">ABC 270 G - Sequence in mod P</h2>
+<p><strong>题意：</strong>序列 <span class="arithmatex">\(f\)</span> 满足 <span class="arithmatex">\(f_0=s,f_{i}=a\times f_{i-1}+b(i\geq 1)\pmod p\)</span>。给定 <span class="arithmatex">\(a,b,s,p,g\)</span>，求最小的 <span class="arithmatex">\(n\)</span> 满足 <span class="arithmatex">\(f_n=g\)</span>。</p>
+<p><strong>限制：</strong> <span class="arithmatex">\(0\leq a,b,s,p,g\leq 10^9\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc270/tasks/abc270_g</p>
+<p><strong>题解：</strong>BSGS</p>
+<p>用 <span class="arithmatex">\(h_i(x)\)</span> 表示当第 <span class="arithmatex">\(0\)</span> 项为 <span class="arithmatex">\(x\)</span> 时，序列第 <span class="arithmatex">\(i\)</span> 项的值，则 <span class="arithmatex">\(f_{n=pT-q}=g\)</span> 等价于 <span class="arithmatex">\(h_{pT}(s)=h_q(g)\)</span>。</p>
+<p>变换 <span class="arithmatex">\(f\)</span> 的递推式，设 <span class="arithmatex">\(h_i(x)=a_i\times x+b_i\)</span>，则 <span class="arithmatex">\(a_i=a_{i-1}\times a,b_{i}=b_{i-1}\times a+b\)</span>。</p>
+<p>令 <span class="arithmatex">\(T=\lceil\sqrt{p}\rceil\)</span> ，预处理 <span class="arithmatex">\(h_q(g):h_1(g),h_2(g),\cdots,h_T(g)\)</span>，然后哈希表中依次寻找 <span class="arithmatex">\(h_{pT}(s):h_T(s),h_{2T}(s),\cdots,h_{T^2}(s)\)</span>，最终得到 <span class="arithmatex">\(n=pT-q\)</span>。</p>
+<p>已知 <span class="arithmatex">\(h_{iT}(s)\)</span>，则 <span class="arithmatex">\(h_{(i+1)T}(s)=h_{T}(h_{iT}(s))=a_T\times h_{iT}(s)+b_{T}\)</span>，而 <span class="arithmatex">\(a_T,b_T\)</span> 可以在预处理 <span class="arithmatex">\(h_{q}(g)\)</span> 时得到，因此 <span class="arithmatex">\(h\)</span> 的每一项都可以 <span class="arithmatex">\(O(1)\)</span> 计算。</p>
+<p>单组查询的复杂度为 <span class="arithmatex">\(O(\sqrt{p})\)</span>。</p>
+<p><strong>代码</strong>：https://atcoder.jp/contests/abc270/submissions/35189357</p>
+<h2 id="abc-239-g-builder-takahashi">ABC 239 G - Builder Takahashi</h2>
+<p><strong>题意：</strong>给定 <span class="arithmatex">\(n\)</span> 个点 <span class="arithmatex">\(m\)</span> 条边的无向连通图，删除点 <span class="arithmatex">\(i\)</span> 的花费为 <span class="arithmatex">\(c_i\)</span>。可以选择 <span class="arithmatex">\(2\sim n-1\)</span> 号点中的若干个点删除（并删除与其相连的所有边），使得 <span class="arithmatex">\(1\)</span> 号点和 <span class="arithmatex">\(n\)</span> 号点不连通。求最小花费。</p>
+<p><strong>限制</strong>：<span class="arithmatex">\(n\leq 100\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc239/tasks/abc239_g</p>
+<p><strong>题解：</strong>最大流</p>
+<p>拆点并建图，连边 <span class="arithmatex">\((i, i', c_i)\)</span>。对于每条边 <span class="arithmatex">\((u,v)\)</span>，连边 <span class="arithmatex">\((u',v,\infty),(v',u,\infty)\)</span>。</p>
+<p>最小花费为 <span class="arithmatex">\(1'\rightarrow n\)</span> 的最大流，被删除的点为最小割上的割边（显然这些边都形如 <span class="arithmatex">\(i\rightarrow i'\)</span>）对应的点。</p>
+<p>需要注意的是，最小割上的边并不等价于流量流满（flow=capcity）的边。</p>
+<p>复杂度 <span class="arithmatex">\(O(\text{maxflow}(n, m))\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc239/submissions/35192622</p>
+<h2 id="abc-237-g-range-sort-query">ABC 237 G - Range Sort Query</h2>
+<p><strong>题意：</strong>给定一个长为 <span class="arithmatex">\(n\)</span> 的排列，有 <span class="arithmatex">\(q\)</span> 次操作。第 <span class="arithmatex">\(i\)</span> 次操作为将子区间 <span class="arithmatex">\([l_i,r_i]\)</span> 的元素升序/降序排序。求经过 <span class="arithmatex">\(q\)</span> 次操作后，元素 <span class="arithmatex">\(x\)</span> 的下标是多少。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n,q\leq 10^5\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc237/tasks/abc237_g</p>
+<p><strong>题解：</strong>线段树</p>
+<p>区间排序时，只需要知道 <span class="arithmatex">\(\geq x\)</span>（或者 <span class="arithmatex">\(\leq x\)</span>）的元素个数后将左右区间分别覆盖成 <span class="arithmatex">\(0/1\)</span> ，并更新 <span class="arithmatex">\(x\)</span> 的位置。</p>
+<p>维护一棵区间求和、区间覆盖的线段树，复杂度 <span class="arithmatex">\(O(q\log{n})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc237/submissions/35194796</p>
+<h2 id="abc-247-g-dream-team">ABC 247 G - Dream Team</h2>
+<p><strong>题意：</strong>有 <span class="arithmatex">\(n\)</span> 个人，第 <span class="arithmatex">\(i\)</span> 个人属于 <span class="arithmatex">\(a_i\)</span> 大学，擅长学科为 <span class="arithmatex">\(b_i\)</span>，能力为 <span class="arithmatex">\(c_i\)</span>。求恰好选择 <span class="arithmatex">\(1,2,\cdots\)</span> 个人时，在满足任意两个人的大学不同且擅长学科不同的条件下，能力值之和的最大值。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 3\times 10^4,1\leq a_i,b_i\leq 150\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc247/tasks/abc247_g</p>
+<p><strong>题解：</strong>费用流</p>
+<p>每所大学和学科都只能被选择一次，这是经典的网络流模型。</p>
+<p><span class="arithmatex">\(s\rightarrow a_i\)</span>，流量为 <span class="arithmatex">\(1\)</span>，费用为 <span class="arithmatex">\(0\)</span>；<span class="arithmatex">\(b_i\rightarrow t\)</span>，流量为 <span class="arithmatex">\(1\)</span> ，费用为 <span class="arithmatex">\(0\)</span>；<span class="arithmatex">\(a_i\rightarrow b_i\)</span>，流量为 <span class="arithmatex">\(1\)</span>，费用为 <span class="arithmatex">\(-c_i\)</span>。</p>
+<p>跑最小费用最大流。每增广一次，流量增加 <span class="arithmatex">\(1\)</span>，即多选一个人，累计的总费用即为此时的能力值之和。</p>
+<p>注意要用增广的方式跑费用流，而不是每次从 <span class="arithmatex">\(s\)</span> 增加一条边容量为 <span class="arithmatex">\(1\)</span> 的边再重新跑pushRelabel。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc247/submissions/35195856</p>
+<h2 id="abc-238-g-cubic">ABC 238 G - Cubic?</h2>
+<p><strong>题意：</strong>给定长为 <span class="arithmatex">\(n\)</span> 的序列 <span class="arithmatex">\(a\)</span>，有 <span class="arithmatex">\(q\)</span> 个询问。第 <span class="arithmatex">\(i\)</span> 次询问给定 <span class="arithmatex">\(l_i,r_i\)</span>，查询 <span class="arithmatex">\(\prod\limits_{j=l_i}^{r_i}{a_j}\)</span> 是否是立方数。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n,q\leq 2\times 10^5,1\leq a_i\leq 10^6\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc238/tasks/abc238_g</p>
+<p><strong>题解1：</strong>莫队</p>
+<p>对 <span class="arithmatex">\(a_i\)</span> 做质因数分解，不难发现至多 <span class="arithmatex">\(8\)</span> 个质因数（<span class="arithmatex">\(2\times 3\times 5\times 7\times 11\times 13\times 17\times 19=9,699,690&gt;1,000,000\)</span>）。而立方数只需要满足每个质因子的幂指数都为 <span class="arithmatex">\(3\)</span> 的倍数。因此可以用莫队维护区间中每个质因子的幂指数。复杂度 <span class="arithmatex">\(O(q\sqrt{n})\)</span>。</p>
+<p>其实莫队的部分跑的并不慢，但如果在预处理的时候暴力分解质因数，那就寄了，需要用埃氏筛预处理每个数的最小质因数，即可实现 <span class="arithmatex">\(O(\log{a_i})\)</span> 分解。</p>
+<p><strong>题解2：</strong>哈希</p>
+<p>分析同上，我们需要维护的是每个质因数的幂指数。不难发现不同质因子之间互不干扰。因此可以通过哈希的方式维护每个前缀区间的 <span class="arithmatex">\(\sum\limits_{p\in \text{prime}}{p\times (cnt[p]\bmod 3)}\)</span> ，其中 <span class="arithmatex">\(cnt[p]\)</span> 为质因子 <span class="arithmatex">\(p\)</span> 的出现次数。若两前缀值相等，则说明该区间中所有质因子的幂指数都是 <span class="arithmatex">\(3\)</span> 的倍数。复杂度 <span class="arithmatex">\(O(n\log{a_i})\)</span>。</p>
+<p>由于本方法复杂度低，因此即使你暴力分解质因数，代码跑的也不慢。。</p>
+<p><strong>代码1：</strong>https://atcoder.jp/contests/abc238/submissions/35207997</p>
+<p><strong>代码2：</strong>https://atcoder.jp/contests/abc238/submissions/35208067</p>
+<h2 id="abc-267-g-increasing-k-times">ABC 267 G - Increasing K Times</h2>
+<p><strong>题意：</strong>给定长为 <span class="arithmatex">\(n\)</span> 的序列 <span class="arithmatex">\(a\)</span>，求有多少个 <span class="arithmatex">\(1\sim n\)</span> 的排列 <span class="arithmatex">\(p\)</span> ，满足恰好存在 <span class="arithmatex">\(k\)</span> 个 <span class="arithmatex">\(i\)</span> 满足 <span class="arithmatex">\(a_{p_i}&lt;a_{p_{i+1}}\)</span>。答案对 <span class="arithmatex">\(998244353\)</span> 取模。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 5000\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc267/tasks/abc267_g</p>
+<p><strong>题解：</strong>DP</p>
+<p>问题等价于求 <span class="arithmatex">\(a\)</span> 有多少种排列方式 <span class="arithmatex">\(b\)</span>，满足存在 <span class="arithmatex">\(k\)</span> 个「正序对」（ <span class="arithmatex">\(b_i&lt;b_{i+1}\)</span>）。考虑将 <span class="arithmatex">\(a\)</span> 升序排序后，逐个插入空序列中，则每插入一个数，新序列的「正序对」个数要么不变，要么增加 <span class="arithmatex">\(1\)</span>。</p>
+<p>将 <span class="arithmatex">\(a_i\)</span> 插入在 <span class="arithmatex">\(b_j,b_{j+1}\)</span> 之间（令 <span class="arithmatex">\(b_{-1}=b_{|b|+1}=0\)</span>），根据大小关系有两种情况：</p>
+<ul>
+<li><span class="arithmatex">\(a_i&gt;b_j,b_j\geq b_{j+1}\)</span>：个数加一</li>
+<li>其他：个数不变</li>
+</ul>
+<p>记 <span class="arithmatex">\(f(i,j)\)</span>  为前 <span class="arithmatex">\(i\)</span> 个数，组成 <span class="arithmatex">\(j\)</span> 个「正序对」的方案数。（记 <span class="arithmatex">\(cnt[a_i]\)</span> 为 <span class="arithmatex">\(a_i\)</span> 的当前出现次数）</p>
+<ul>
+<li><span class="arithmatex">\(f(i,j)\rightarrow f(i+1,j)\)</span>：插在与 <span class="arithmatex">\(a_i\)</span> 相等的数 / <span class="arithmatex">\(b_j&lt;b_{j+1}\)</span> 之间，共 <span class="arithmatex">\(cnt[a_i]+j+1\)</span> 种方式</li>
+<li><span class="arithmatex">\(f(i,j)\rightarrow f(i+1,j+1)\)</span>：共 <span class="arithmatex">\(i-j-cnt[a_i]\)</span> 种方式</li>
+</ul>
+<p>答案为 <span class="arithmatex">\(f(n,k)\)</span>，复杂度 <span class="arithmatex">\(O(nk)\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc267/submissions/35214949</p>
+<h2 id="abc-256-g-black-and-white-stones">ABC 256 G - Black and White Stones</h2>
+<p><strong>题意：</strong>将若干个黑白石子摆成每条边上有 <span class="arithmatex">\(d+1\)</span> 个石子的 <span class="arithmatex">\(n\)</span> 边形，要求每条边上的白色石子个数相同，求方案数。答案对 <span class="arithmatex">\(998244353\)</span> 取模。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 10^{14}, d\leq 10^4\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc256/tasks/abc256_g</p>
+<p><strong>题解：</strong>矩阵快速幂</p>
+<p>枚举每条边的白色石子数 <span class="arithmatex">\(m\)</span>，设 <span class="arithmatex">\(f^m_{0/1}(i,0/1)\)</span>，表示已经放置了 <span class="arithmatex">\(i\)</span> 条边，其中第 <span class="arithmatex">\(1\)</span> 条边的首和第 <span class="arithmatex">\(i\)</span> 边的尾分别为黑/白石子的方案数，则答案为 <span class="arithmatex">\(\sum\limits_{m=0}^{d+1}{f^m_1(n,1)+f^m_0(n,0)}\)</span>。</p>
+<p>则转移方程 <span class="arithmatex">\(f^m_*(i)=a^m\times f^m_*(i-1)\)</span> 为：
+$$
+\begin{bmatrix}
+f(i, 0)\
+f(i, 1)\
+\end{bmatrix}
+=
+\begin{bmatrix}
+{d-1\choose m-2}\ {d-1\choose m-1}\
+{d-1\choose m-1}\ {d-1\choose m}\
+\end{bmatrix}\times
+\begin{bmatrix}
+f(i-1, 0)\
+f(i-1, 1)\
+\end{bmatrix}
+$$
+这个方程可以用矩阵快速幂转移，总复杂度 <span class="arithmatex">\(O(d\times \log{n})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc256/submissions/35216315</p>
+<h2 id="abc-246-g-game-on-tree-3">ABC 246 G - Game on Tree 3</h2>
+<p><strong>题意：</strong>给定一棵树，除根节点外的任意点 <span class="arithmatex">\(i\)</span> 都有权值 <span class="arithmatex">\(a_i\)</span>。Alice和Bob轮流操作，从根节点出发。在每个回合中，Alice首先选择任意一个点，将其权值置为 <span class="arithmatex">\(0\)</span>，然后Bob从当前点移动到它的任意一个子节点中，并可以选择立刻结束游戏（若到达叶子节点，则游戏自动结束）。游戏得分是结束游戏前他所在点的权值，Alice想要最小化，Bob想要最大化。如果双方均采取最优策略，求最终得分。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 2\times 10^5,1\leq a_i\leq 10^9\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc246/tasks/abc246_g</p>
+<p><strong>题解1：</strong>二分答案+树形DP</p>
+<p>首先二分答案 <span class="arithmatex">\(x\)</span>，将权值小于 <span class="arithmatex">\(x\)</span> 的点的权值 <span class="arithmatex">\(b_i\)</span> 置为 <span class="arithmatex">\(0\)</span>，否则置为 <span class="arithmatex">\(1\)</span>。问题变成Bob能否达到一个权值为 <span class="arithmatex">\(1\)</span> 的点。</p>
+<p>设 <span class="arithmatex">\(f(x)\)</span> 表示如果下一步走到 <span class="arithmatex">\(x\)</span> 点，在此之前，Alice需要至少多少次置 <span class="arithmatex">\(0\)</span> 才能阻止未来Bob到达权值为 <span class="arithmatex">\(1\)</span> 的点。转移方程为 <span class="arithmatex">\(f(x)=\max(-1+\sum\limits_{y\in son[y]}{f(v)},0)+b_x\)</span>，最后只需要判断 <span class="arithmatex">\(f(1)\)</span> 是否为 <span class="arithmatex">\(0\)</span>。</p>
+<p>复杂度 <span class="arithmatex">\(O(n\log{a_i})\)</span>。</p>
+<p><strong>题解2：</strong>线段树</p>
+<p>同样是自底向上考虑。贪心地想，当前在 <span class="arithmatex">\(x\)</span> 点，Alice下一回合会置 <span class="arithmatex">\(0\)</span> 的点应该是 <span class="arithmatex">\(x\)</span> 子树中（不包括 <span class="arithmatex">\(x\)</span>）剩余点中的最大值。因此可以用线段树维护子树最大值，自底向上转移。</p>
+<p>复杂度 <span class="arithmatex">\(O(n\log{n})\)</span>。</p>
+<p><strong>代码1：</strong>https://atcoder.jp/contests/abc246/submissions/35227917</p>
+<p><strong>代码2：</strong>https://atcoder.jp/contests/abc246/submissions/me</p>
+<h2 id="abc-234-g-divide-a-sequence">ABC 234 G - Divide a Sequence</h2>
+<p><strong>题意：</strong>给定长为 <span class="arithmatex">\(n\)</span> 的序列 <span class="arithmatex">\(a\)</span>，共有 <span class="arithmatex">\(2^n\)</span> 种方式将其划分成长度为 <span class="arithmatex">\(m=1,2,\cdots,n\)</span> 的非空连续子序列 <span class="arithmatex">\(b_1,b_2,\cdots,b_m\)</span>。对于任意划分，定义其权值为 <span class="arithmatex">\(\prod{\max(b_i)-\min(b_i)}\)</span>。求这 <span class="arithmatex">\(2^n\)</span> 个划分的权值之和，答案对 <span class="arithmatex">\(998244353\)</span> 取模。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 3\times 10^5\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc234/tasks/abc234_g</p>
+<p><strong>题解：</strong>单调栈</p>
+<p><span class="arithmatex">\(f(i)\)</span> 表示前 <span class="arithmatex">\(i\)</span> 个数的所有划分的权值之和，则 <span class="arithmatex">\(f(i)=\sum\limits_{j&lt;i}{f(j)\times (\max\limits_{k=j+1}^{i}{a_k}-\min\limits_{k=j+1}^{i}{a_k})}\)</span>。</p>
+<p>将后式的 <span class="arithmatex">\(\max\)</span> 和 <span class="arithmatex">\(\min\)</span> 拆开维护，显然 <span class="arithmatex">\([1,i-1]\)</span> 可以划分出若干段连续区间，其区间 <span class="arithmatex">\(\max\)</span> / <span class="arithmatex">\(\min\)</span> 是相等的，且区间的从左到右 <span class="arithmatex">\(\max/\min\)</span> 值是递减/递增的。</p>
+<p>因此可以用单调栈维护这些 <span class="arithmatex">\(\max/\min\)</span> 的区间 <span class="arithmatex">\(f\)</span> 值之和，弹出栈顶的同时计算出它的贡献增量。复杂度为 <span class="arithmatex">\(O(n)\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc234/submissions/35230774</p>
+<h2 id="abc-223-g-vertex-deletion">ABC 223 G - Vertex Deletion</h2>
+<p><strong>题意：</strong>给定一棵树，求有多少个点满足在删除它之后，最大匹配数不变。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 2\times 10^5\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc223/tasks/abc223_g</p>
+<p><strong>题解：</strong>换根DP</p>
+<p>求树的最大匹配有 <span class="arithmatex">\(O(n)\)</span> 的树形DP，即 <span class="arithmatex">\(f[x][0/1]\)</span> 表示 <span class="arithmatex">\(x\)</span> 子树中的最大匹配数，且 <span class="arithmatex">\(x\)</span> 是否与它父亲连边。</p>
+<p>转移方程为 <span class="arithmatex">\(f[x][1]=\sum\limits_{y\in son[x]}{f[y][0]},f[x][0]=\sum\limits_{y\in son[x]}{f[y][0]}+\max\limits_{y\in son[x]}{f[y][1]+1-f[y][0]}\)</span>。</p>
+<p>同时记录 <span class="arithmatex">\(x\)</span> 的子节点中，<span class="arithmatex">\(f[y][1]+1-f[y][0]\)</span> 的最大值和次大值来源，记为 <span class="arithmatex">\(from[x][0/1]\)</span>。</p>
+<p>换根DP， <span class="arithmatex">\(x\rightarrow y\)</span> 时维护 <span class="arithmatex">\(f[x][*],f[y][*],from[x][*],from[y][*]\)</span> 的变化值即可，其他点的值不变。</p>
+<p>复杂度 <span class="arithmatex">\(O(n)\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc223/submissions/35242470</p>
+<h2 id="abc-230-g-gcd-permutation">ABC 230 G - GCD Permutation</h2>
+<p><strong>题意：</strong>给定一个长为 <span class="arithmatex">\(n\)</span> 的排列 <span class="arithmatex">\(p\)</span>，求有多少个数对 <span class="arithmatex">\((i,j)(i\leq j)\)</span> 满足 <span class="arithmatex">\(\gcd(i,j)\not=1\)</span> 且 <span class="arithmatex">\(\gcd(p_i,p_j)\not=1\)</span>。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 2\times 10^5\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc230/tasks/abc230_g</p>
+<p><strong>题解：</strong>莫比乌斯反演</p>
+<p>设 <span class="arithmatex">\(f(a,b;i,j)\)</span> 表示【 <span class="arithmatex">\(i,j\)</span> 是 <span class="arithmatex">\(a\)</span> 的倍数，且 <span class="arithmatex">\(p_i,p_j\)</span> 是 <span class="arithmatex">\(b\)</span> 的倍数】。</p>
+<p>由 <span class="arithmatex">\(\sum\limits_{d|n}\tilde\mu(d)=[n\geq 2]\)</span>，枚举位置 <span class="arithmatex">\(i,j\)</span> ，并枚举公因数 <span class="arithmatex">\(a,b\)</span>，则答案为 <span class="arithmatex">\(\sum_\limits{1\leq i\leq j\leq n}\sum\limits_{a=1}^{n}\sum\limits_{b=1}^{n}{\tilde\mu(a)\tilde\mu(b)f(a,b;i,j)}\)</span>，其中 <span class="arithmatex">\(\mu(a)\)</span> 为莫比乌斯函数。</p>
+<p>记 <span class="arithmatex">\(h(a,b)\)</span> 为满足 <span class="arithmatex">\(i|a\)</span> 且 <span class="arithmatex">\(p_i|b\)</span> 的 <span class="arithmatex">\(i\)</span> 的个数，则 <span class="arithmatex">\(\sum\limits_{1\leq i\leq j\leq n}{f(a,b;i,j)}=\frac{h(a,b)(h(a,b)+1)}{2}\)</span>，答案化简为 <span class="arithmatex">\(\sum\limits_{a=1}^{n}\sum\limits_{b=1}^{n}\tilde\mu(a)\tilde\mu(b)\frac{h(a,b)(h(a,b)+1)}{2}\)</span>。</p>
+<p>先枚举 <span class="arithmatex">\(a\)</span>，无需枚举 <span class="arithmatex">\(b\)</span>。此时满足 <span class="arithmatex">\(i|a\)</span> 的数为 <span class="arithmatex">\(p_{a},p_{2a},\cdots,p_{ka}\)</span>，则 <span class="arithmatex">\(b\)</span> 需要是他们的因数之一且 <span class="arithmatex">\(\tilde\mu(b)\not=0\)</span>。因此对于 <span class="arithmatex">\(p_{ia}\)</span> ，遍历它的所有 <span class="arithmatex">\(\tilde\mu(d)\not=0\)</span> 的因子 <span class="arithmatex">\(d\)</span>，并统计出现次数。</p>
+<p>枚举的数总个数 <span class="arithmatex">\(\{p_{ia}\}=\sum\limits_{i=1}^{n}{\lfloor\frac{n}{i}\rfloor}=O(n\log{n})\)</span> ，而 <span class="arithmatex">\(\leq 2\times 10^5\)</span> 的数的质因子个数不会超过 <span class="arithmatex">\(7\)</span> 个，因而 <span class="arithmatex">\(\tilde\mu\not=0\)</span> 的因数个数不超过 <span class="arithmatex">\(2^7\)</span> 个，总复杂度 <span class="arithmatex">\(O(63n\log{n})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc230/submissions/35244167</p>
+<h2 id="abc-236-g-good-vertices">ABC 236 G - Good Vertices</h2>
+<p><strong>题意：</strong><span class="arithmatex">\(n\)</span> 个点的有向图，在第 <span class="arithmatex">\(0\)</span> 秒时没有边。在第 <span class="arithmatex">\(i(1\leq i\leq t)\)</span> 秒，加入有向边 <span class="arithmatex">\(u_i\rightarrow v_i\)</span>。对于任意点 <span class="arithmatex">\(t\)</span>，求长度恰好为 <span class="arithmatex">\(L\)</span> 条边的路径 <span class="arithmatex">\(1\to t\)</span> 的最早出现时间。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 100, t\leq n^2,L\leq 10^9\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc236/tasks/abc236_g</p>
+<p><strong>题解：</strong>矩阵快速幂</p>
+<p>设 <span class="arithmatex">\(f(i,j)\)</span> 表示到达经过恰好 <span class="arithmatex">\(i\)</span> 条边到达 <span class="arithmatex">\(j\)</span> 点的所有路径中编号最大的边的最小值，答案为 <span class="arithmatex">\(f(L,1),\cdots,f(L,n)\)</span>。</p>
+<p>转移方程：<span class="arithmatex">\(f(i,j)=\min\limits_{1\leq j\leq n}\{\max(f(i-1,j),W(j,i))\}\)</span>，其中 <span class="arithmatex">\(W(j,i)\)</span> 为边 <span class="arithmatex">\(j\rightarrow i\)</span> 出现的时间，若不存在置为 <span class="arithmatex">\(\infty\)</span>。</p>
+<p>初值 <span class="arithmatex">\(f(0,1)=0,f(0,i)=\infty(2\leq i\leq n)\)</span>。</p>
+<p>将 <span class="arithmatex">\(\max\)</span> 定义为 <span class="arithmatex">\(+\)</span>，<span class="arithmatex">\(\min\)</span> 定义为 <span class="arithmatex">\(\times\)</span>，则上式可以写成矩阵乘法的形式 <span class="arithmatex">\(f_{n\times 1}(i)=W_{n\times n}\times f_{n\times 1}(i-1)\)</span>。</p>
+<p>由于 <span class="arithmatex">\(\max,\min\)</span> 满足分配律、交换律和结合律，因此可以改变运算顺序，对这个式子做矩阵快速幂，得到 <span class="arithmatex">\(f(L,i)=W^L(i,1)\)</span>。</p>
+<p>复杂度 <span class="arithmatex">\(O(n^3\log{L})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc236/submissions/35326063</p>
+<h2 id="abc-249-g-xor-cards">ABC 249 G - Xor Cards</h2>
+<p><strong>题意：</strong>有 <span class="arithmatex">\(n\)</span> 张卡片，第 <span class="arithmatex">\(i\)</span> 张卡片正面写着 <span class="arithmatex">\(a_i\)</span>，背面写着 <span class="arithmatex">\(b_i\)</span>。现在选择若干张卡片，求在满足正面的异或和不超过 <span class="arithmatex">\(k\)</span> 的条件下，背面的异或和的最大值。</p>
+<p><strong>限制：</strong> <span class="arithmatex">\(n\leq 1000,0\leq a_i,b_i,k\leq 2^{30}\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc249/tasks/abc249_g</p>
+<p><strong>题解：</strong>线性基</p>
+<p>根据线性基定理，<span class="arithmatex">\(n\)</span> 个数的任意子集的异或和只需要 <span class="arithmatex">\(O(\log{V})\)</span> 个数的线性基即可表示。</p>
+<p>对于两张卡片 <span class="arithmatex">\((a,b),(c,d)\)</span>，它们等价于 <span class="arithmatex">\((a\oplus c,b\oplus d),(c,d)\)</span>，因此可以通过这样的方式，一边构造 <span class="arithmatex">\(a_i\)</span> 的线性基 <span class="arithmatex">\(la\)</span>，并把所有能用线性基表示的卡片 <span class="arithmatex">\((a_i,b_i)\)</span> 转换成 <span class="arithmatex">\((0,b_i')\)</span>。</p>
+<p>此时剩下若干个 <span class="arithmatex">\((0,b_i')\)</span> 和一个线性基 <span class="arithmatex">\(la\)</span>，前者可以再构造出一个对 <span class="arithmatex">\(k\)</span> 的限制无影响的线性基 <span class="arithmatex">\(lb\)</span>。</p>
+<p>此时考虑如何满足 <span class="arithmatex">\(k\)</span> 的限制。</p>
+<p>枚举 <span class="arithmatex">\(i\)</span>，用 <span class="arithmatex">\(la\)</span> 构造出前 <span class="arithmatex">\(i-1\)</span> 位与 <span class="arithmatex">\(k\)</span> 相同，且当前位为 <span class="arithmatex">\(0\)</span> 而 <span class="arithmatex">\(k_{(i)}=1\)</span> 的状态，此时任意取后面的位都满足限制。那么就可以将后面位的 <span class="arithmatex">\(b_i\)</span> 插入 <span class="arithmatex">\(lb\)</span> 中，并查询异或最大值。</p>
+<p>复杂度 <span class="arithmatex">\(O(n\log{V}+\log^3{V})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc249/submissions/35388300</p>
+<h2 id="abc-248-g-gcd-cost-on-the-tree">ABC 248 G - GCD cost on the tree</h2>
+<p><strong>题意：</strong>给定一棵树，点 <span class="arithmatex">\(i\)</span> 有点权 <span class="arithmatex">\(a_i\)</span>。定义 <span class="arithmatex">\(f(u,v)\)</span> 为 <span class="arithmatex">\(u,v\)</span> 之间的最短路径上的点数与最短路径上所有点权值的 <span class="arithmatex">\(\gcd\)</span> 的乘积。求 <span class="arithmatex">\(\sum\limits_{i=1}^{n}\sum\limits_{j=i+1}^{n}{f(i,j)}\)</span>。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(1\leq n,a_i\leq 10^5,\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc248/tasks/abc248_g</p>
+<p><strong>题解：</strong>树形DP</p>
+<p>应该算是个暴力，也不知道复杂度对不对，不过跑的飞快。</p>
+<p>维护 <span class="arithmatex">\(f(i)=\{(x,y)\}\)</span> ，表示 <span class="arithmatex">\(i\)</span> 的子树中的所有点，从 <span class="arithmatex">\(i\)</span> 出发，路径 <span class="arithmatex">\(\gcd=x\)</span> 的所有点的深度之和为 <span class="arithmatex">\(y\)</span>。</p>
+<p>那么合并 <span class="arithmatex">\(f(i)\)</span> 和其子节点 <span class="arithmatex">\(f(j)\)</span> 时，只需要分别枚举 <span class="arithmatex">\((x_1,y_1)\in f(i)\)</span> 和 <span class="arithmatex">\((x_2,y_2)\in f(j)\)</span>，贡献为 <span class="arithmatex">\([y_1\times x_2+x_1\times y_2-(2\times dep(i) - 1)\times (y_1\times y_2)] \times \gcd(x_1,x_2)\)</span>。</p>
+<p>注意到，虽然看起来 <span class="arithmatex">\(x\)</span> 的取值有很多，但是实际上至多只有 <span class="arithmatex">\(d(a_i)\)</span> 个。而根据经典老图，<span class="arithmatex">\(\max\{d(10^5)\}=128\)</span>，因此复杂度上界是 <span class="arithmatex">\(O(128^2\times n)\)</span>，但实际上远远跑不满。</p>
+<p><img alt="IMG_2672" src="https://raw.githubusercontent.com/SkqLiiiao/image/main/202210041448144.jpeg" /></p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc248/submissions/35390296</p>
+<h2 id="abc-225-g-x">ABC 225 G - X</h2>
+<p><strong>题意：</strong>给定一个 <span class="arithmatex">\(n\times m\)</span> 的网格，每个格子有权值 <span class="arithmatex">\(w(i,j)\)</span>。现在可以选择若干个格子画"X"，即两条对角线。最后的得分为所有画"X"的格子的权值之和- <span class="arithmatex">\(C\times\)</span> 需要画的对角线数量（每次画对角线可以穿越多个格子）。要求每个格子要么画"X"，要么什么都没画。求得分的最大值。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n,m\leq 100\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc225/tasks/abc225_g</p>
+<p><strong>题解：</strong>最大流</p>
+<p>现在的得分是两部分的差，不太好算。先假设所有格子都被画"X"获得 <span class="arithmatex">\(\sum{w(i,j)}\)</span> 的分数，再减去付出代价的最小值，如此得到的结果应与答案相同。</p>
+<p>先考虑右下方向的对角线，它的代价应该是 <span class="arithmatex">\(C\times\)</span> 【 <span class="arithmatex">\((i,j)\)</span> 画"X"，但是 <span class="arithmatex">\((i-1,j-1)\)</span> 不画的数量】，同理左下方向的。</p>
+<p>因此构图方法如下：</p>
+<ul>
+<li><span class="arithmatex">\(s\rightarrow (i,j)\)</span>，流量为 <span class="arithmatex">\(w(i,j)\)</span></li>
+<li><span class="arithmatex">\((i,j)\rightarrow (i-1,j-1)\)</span>，流量为 <span class="arithmatex">\(c\)</span>（存在 <span class="arithmatex">\((i-1,j-1)\)</span>）</li>
+<li><span class="arithmatex">\((i,j)\rightarrow (i-1,j+1)\)</span>，流量为 <span class="arithmatex">\(c\)</span>（存在 <span class="arithmatex">\((i-1,j+1)\)</span>）</li>
+<li><span class="arithmatex">\((0,j)/(i,0)\rightarrow t\)</span>，流量为 <span class="arithmatex">\(c\)</span></li>
+<li><span class="arithmatex">\((0,j)/(i,m)\rightarrow t\)</span>，流量为 <span class="arithmatex">\(c\)</span> </li>
+</ul>
+<p>答案为 <span class="arithmatex">\(\sum{w(i,j)}-\text{maxflow}(s,t)\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc225/submissions/35391979</p>
+<h2 id="abc-271-g-access-counter">ABC 271 G - Access Counter</h2>
+<p><strong>题意：</strong>给定长为 <span class="arithmatex">\(24\)</span> 的字符串，<span class="arithmatex">\(s[i]=a\)</span> 表示每天 <span class="arithmatex">\(i\)</span> 点钟Alice有 <span class="arithmatex">\(x\)</span> 的概率访问网页，<span class="arithmatex">\(s[i]=b\)</span> 表示每天 <span class="arithmatex">\(i\)</span> 点钟Bob有 <span class="arithmatex">\(y\)</span> 的概率访问网页。从某天的 <span class="arithmatex">\(0\)</span> 点开始游戏，求第 <span class="arithmatex">\(n\)</span> 次访问网页恰好是Alice完成的概率。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 10^{18}\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc271/submissions/35417575</p>
+<p><strong>题解：</strong>矩阵快速幂</p>
+<p>设 <span class="arithmatex">\(f(i,j,k)\)</span> 表示第 <span class="arithmatex">\(2^i\)</span> 次访问网页在 <span class="arithmatex">\(k\)</span> 点钟，上一次访问在 <span class="arithmatex">\(j\)</span> 点钟的概率，转移方程为 <span class="arithmatex">\(f(i,j,k)=\sum\limits_{l=0}^{23}{f(i-1,j,l)\times f(i-1,l,k)}\)</span>。</p>
+<p>计算初值，假设第 <span class="arithmatex">\(1\)</span> 次访问网页是在 <span class="arithmatex">\(i\)</span> 点钟，则它需要经过 <span class="arithmatex">\(n(n\geq 0)\)</span>天的失败，以及 <span class="arithmatex">\([0,i-1]\)</span> 点钟的失败和 <span class="arithmatex">\(i\)</span> 点钟的成功，概率为 <span class="arithmatex">\(g(i)=\sum_\limits{n=0}^{\infty}{q^n\times \prod\limits_{j=0}^{i-1}{(1-p_j)}\times p_i}\)</span>，其中 <span class="arithmatex">\(q=\prod{(1-p_i)}\)</span>，<span class="arithmatex">\(p_i\)</span> 为 <span class="arithmatex">\(i\)</span> 点钟访问网页的概率。</p>
+<p>根据等比数列求和公式，<span class="arithmatex">\(g(i)=\frac{1}{1-q}\times\prod\limits_{j=0}^{i-1}{(1-p_j)}\times p_i\)</span>。</p>
+<p>计算出 <span class="arithmatex">\(g(i)\)</span> 后，通过枚举第 <span class="arithmatex">\(1\)</span> 次和第 <span class="arithmatex">\(2\)</span> 次访问时间可以得到初值 <span class="arithmatex">\(f(1,*,*)\)</span>。</p>
+<p>不难发现转移方程矩阵乘法的形式，因此可以通过矩阵快速幂求第 <span class="arithmatex">\(n\)</span> 次访问的概率 <span class="arithmatex">\(h(*,*)\)</span>，答案为 <span class="arithmatex">\(\sum h(23,i)\)</span>，其中 <span class="arithmatex">\(i\)</span> 满足 <span class="arithmatex">\(s[i]=a\)</span>。</p>
+<p>复杂度 <span class="arithmatex">\(O(24^3\log{n})\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc271/tasks/abc271_g</p>
+<h2 id="abc-235-g-gardens">ABC 235 G - Gardens</h2>
+<p><strong>题意：</strong>有三种石子，分别有 <span class="arithmatex">\(a,b,c\)</span> 个放置在 <span class="arithmatex">\(n\)</span> 个有标号的盒子中。要求每个盒子至少放置一个石子，每个盒子中至多一个同种石子，而且不必放完所有石子。求方案数。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n \leq 5\times 10^6\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc235/tasks/abc235_g</p>
+<p><strong>题解：</strong>反演</p>
+<p>先考虑至少 <span class="arithmatex">\(i\)</span> 个盒子为空的方案数，<span class="arithmatex">\(\binom{n}{i}\sum\limits_{x=0}^{\min(a,n-i)}\binom{a}{i}\sum\limits_{y=0}^{\min(b,n-i)}\binom{b}{y}\sum\limits_{z=0}^{\min(c,n-i)}\binom{c}{z}\)</span>。</p>
+<p>则答案为恰好 <span class="arithmatex">\(0\)</span> 个盒子为空的方案数，容斥一下，得到 <span class="arithmatex">\(\sum\limits_{i=0}^{n}(-1)^{i}\binom{n}{i}\sum\limits_{x=0}^{\min(a,n-i)}\binom{a}{i}\sum\limits_{y=0}^{\min(b,n-i)}\binom{b}{y}\sum\limits_{z=0}^{\min(c,n-i)}\binom{c}{z}\)</span></p>
+<p>用 <span class="arithmatex">\(f_M(N)\)</span> 表示 <span class="arithmatex">\(\sum\limits_{i=0}^{\min(N,M)}\binom{N}{i}\)</span>，则答案化简为 <span class="arithmatex">\(\sum\limits_{i=0}^{n}(-1)^{n-i}\binom{n}{i}f_a(i)f_b(i)f_c(i)\)</span>。</p>
+<p>现在考虑如何从 <span class="arithmatex">\(f_M(N)\)</span> 快速计算出到 <span class="arithmatex">\(f_M(N+1)\)</span>。</p>
+<p>如果 <span class="arithmatex">\(N+1\leq M\)</span>，根据二项式定理， <span class="arithmatex">\(f_M(N)=\sum\limits_{i=0}^{N}{\binom{N}{i}}=2^N\)</span>，<span class="arithmatex">\(f_M(N+1)=2^{N+1}\)</span>，得 <span class="arithmatex">\(f_M(N+1)=2f_M(N)\)</span>。</p>
+<p>否则 <span class="arithmatex">\(f_M(N)=\sum\limits_{i=0}^{M}\binom{N}{i}\)</span>，<span class="arithmatex">\(f_M(N+1)=\sum\limits_{i=0}^{M}\binom{N+1}{i}\)</span>。</p>
+<p>根据 <span class="arithmatex">\(\binom{N}{M}=\binom{N-1}{M}+\binom{N-1}{M-1}\)</span>，则 <span class="arithmatex">\(2\sum\limits_{i=0}^{M}\binom{N}{i}=\sum\limits_{i=0}^{M}\binom{N+1}{i}-\binom{N}{M}\)</span>。</p>
+<p>也可以通过下图考虑它的意义：</p>
+<p><img src="https://img.atcoder.jp/ghi/d93c643497867d310c6255fb673d9682.png" alt="image" style="zoom:50%;" /></p>
+<p>从左下角出发，每次向右/上移动一格，则到达黄色点的方案数之和为 <span class="arithmatex">\(f_M(N)\)</span>，到达蓝色点的方案数为 <span class="arithmatex">\(f_M(N+1)\)</span>。</p>
+<p>不难发现除了右下角的黄点无法向右移动以外，其他点都有向上/右移动两种方案，因此 <span class="arithmatex">\(f_M(N+1)=2f_M(N)-\binom{N}{M}\)</span>。</p>
+<p>如此每次转移就是 <span class="arithmatex">\(O(1)\)</span> 的了，总复杂度 <span class="arithmatex">\(O(n)\)</span>。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc235/submissions/35426630</p>
+<h2 id="abc-232-g-modulo-shortest-path">ABC 232 G - Modulo Shortest Path</h2>
+<p><strong>题意：</strong>有 <span class="arithmatex">\(n\)</span> 个点的有向完全图，每个点有权值 <span class="arithmatex">\(a_i\)</span> 和 <span class="arithmatex">\(b_i\)</span>。有向边 <span class="arithmatex">\(i\rightarrow j\)</span> 的边权为 <span class="arithmatex">\((a_i+b_j)\bmod m\)</span> ，求 <span class="arithmatex">\(1\to n\)</span> 的最短路。</p>
+<p><strong>限制：</strong><span class="arithmatex">\(n\leq 2\times 10^5, 0\leq a_i,b_i\leq m,2\leq m\leq 10^9\)</span></p>
+<p><strong>链接：</strong>https://atcoder.jp/contests/abc232/tasks/abc232_g</p>
+<p><strong>题解：</strong>建图+最短路</p>
+<p>显然需要把边的数量降下来才能用dijkstra求最短路，因此考虑构建与原图等价的新图。</p>
+<p>对于权值 <span class="arithmatex">\(0\sim m-1\)</span> 分别建一个新点，<span class="arithmatex">\([i]\rightarrow [(i+1)\bmod m]\)</span> 边权为 <span class="arithmatex">\(1\)</span>，可以想象将这 <span class="arithmatex">\(m\)</span> 个点排列成一个顺指针的圆环。</p>
+<p>对于原图上的 <span class="arithmatex">\(n\)</span> 个点，<span class="arithmatex">\(i\rightarrow j\)</span> 的边权为 <span class="arithmatex">\((a_i+b_j)\bmod m\)</span>，考虑用这个圆环上的边替代，则可以用 <span class="arithmatex">\(i\rightarrow [m-a_i]\)</span> 连边权为 <span class="arithmatex">\(0\)</span> 的边，再连一条 <span class="arithmatex">\([b_j]\rightarrow j\)</span> 边权为 <span class="arithmatex">\(0\)</span> 的边。此时 <span class="arithmatex">\(i\rightarrow j\)</span> 就可以沿着圆环走，路上的边权和仍然为 <span class="arithmatex">\((a_i+b_j)\bmod m\)</span>。</p>
+<p>显然不是圆环上的所有点都有用，那些除圆环外没有入度的点可以被删除合并，这样圆环上至多留下 <span class="arithmatex">\(2n\)</span> 个点。</p>
+<p>现在一共 <span class="arithmatex">\(3n\)</span> 个点，<span class="arithmatex">\(4n\)</span> 条边，可以用dijkstra <span class="arithmatex">\(O(n\log{n})\)</span> 求出 <span class="arithmatex">\(1\to n\)</span> 的最短路。</p>
+<p><strong>代码：</strong>https://atcoder.jp/contests/abc232/submissions/35428237</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.integrate", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
